@@ -28,8 +28,13 @@ body{
                         input{
                             margin: 0;
                             width: 4%;
+                            margin-top: -10px;
+                            margin-left: 20px;
                             cursor: pointer;
                         } 
+                        p{
+                            margin-right: 20px;
+                        }
                     }
                 }
             .form-body{
@@ -39,6 +44,9 @@ body{
                 border-top-left-radius: 50%;
                 border-bottom-right-radius: 50%;
                 margin: 10px;
+                h1{
+                    text-align: center;
+                }
                 .text-form{
                     text-align: center;
                     font-size: 1.5rem;
@@ -52,6 +60,9 @@ body{
                         padding: 0;
                         text-align: center;
                         font-size: 1.5rem;
+                    }
+                    a:hover{
+                        opacity: 0.8;
                     }
                 }
                 .cont-opciones{
@@ -106,9 +117,29 @@ body{
                 border: 2px solid #3498db;
                 background: linear-gradient(#34495e, #2c3e50);
             }
+            .cont-back{
+                text-align: center;
+                font-size: ;
+                font-weight: 600;
+                a:hover{
+                    opacity: 0.8;
+                }
+            }
         }
     }
-    footer{
-        text-align: justify;
+    .cont-copy{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0 40px;
+        p{
+            margin-top: 5px;
+            color: #7a7a7a;
+        }
+        hr{
+            height: 1px;
+            background-color: #7a7a7a;
+            border: none;
+        }
     }
 }
