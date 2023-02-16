@@ -118,7 +118,7 @@ body main .cont .form-body button:hover {
 }
 body main .cont .cont-back {
   text-align: center;
-  font-size: rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 body main .cont .cont-back a:hover {
