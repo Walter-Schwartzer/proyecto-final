@@ -18,79 +18,93 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    max-width: 1920px;
+    width: 100%;
+}
+header{    
+    .cont-header{
+        .cont{
+            background: linear-gradient(30deg, #5C0270 50%, #48104F 50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            padding: 5px 10%;
+            h1{
+                font-size: 30px;
+            }
+            .logo-nombre{
+                margin-right: auto;
+            }
+            .cont-logo{
+                cursor: pointer;
+                transition: all 0.10;
+                height: 80px;
+                width: auto;
+                padding-bottom: 10px;
+            }
+            .cont-logo:hover{
+                transform: scale(1.1);
+            }
+            .nav-links{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    padding: 0 20px;
+                }
+                a{
+                    font-size: 700;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .nav-links li:hover{
+                transform: scale(1.1);
+            }
+            .nav-links a:hover{
+                color: #E1B7FF ;
+            }
+        }
+        .cont-cate{
+            .cont_nav_categorias{
+                display: flex;
+                max-width: 1920px;
+                width: 100%;
+                background-color: #00000079;
+                .cont-ul > li{
+                    float: left;
+                }
+                li:hover > ul{
+                    display: block;
+                }
+                .cont-ul{
+                    list-style: none;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 15px 20px;
+                        display: block;
+                    }
+                    a:hover{
+                        background-color: #434343b8;
+                    }
+                    ul{
+                        display: none;
+                        position: absolute;
+                        min-width: 140px;
+                    }
+                    .cont-sub-cate{
+                        background-color: #00000079;
+                    }
+                    .menu_item{
+                        margin: auto 30px;
+                    }
+                }
+            }
+        }    
+    }
 }
 
-.cont-header{
-    .cont{
-        background: linear-gradient(30deg, #5C0270 50%, #48104F 50%);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 90px;
-        padding: 5px 10%;
-        h1{
-            font-size: 30px;
-        }
-        .logo-nombre{
-            margin-right: auto;
-        }
-        .cont-logo{
-            cursor: pointer;
-            transition: all 0.10;
-            height: 80px;
-            width: auto;
-            padding-bottom: 10px;
-        }
-        .cont-logo:hover{
-            transform: scale(1.1);
-        }
-        .nav-links{
-            list-style: none;
-            li{
-                display: inline-block;
-                padding: 0 20px;
-            }
-            a{
-                font-size: 700;
-                color: #fff;
-                text-decoration: none;
-            }
-        }
-        .nav-links li:hover{
-            transform: scale(1.1);
-        }
-        .nav-links a:hover{
-            color: #E1B7FF ;
-        }
-    }
-    .cont-cate{
-        .cont-ul > li{
-            float: left;
-        }
-        li:hover > ul{
-            display: block;
-        }
-        .cont-ul{
-            list-style: none;
-            a{
-                background-color: #00000079; 
-                color: #fff;
-                text-decoration: none;
-                padding: 15px 20px;
-                width: 40.95vh;
-                display: block;
-            }
-            a:hover{
-                background-color: #434343b8;
-            }
-            ul{
-                display: none;
-                position: absolute;
-                min-width: 140px;
-            }
-        }
-    }    
-}
 
 
 main{
