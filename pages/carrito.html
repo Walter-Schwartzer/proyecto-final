@@ -6,46 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../img/icono.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-carrito.css">
     <script src="https://kit.fontawesome.com/db95a8c38b.js" crossorigin="anonymous"></script>
     <title>Mi cuenta</title>
 </head>
 <body>
-        <header>    
-            <h1>Tienda Online</h1>
-            <a href="../index.html"><img src="../img/icono.png" alt="logo" width="200px"></a>
-            <nav>
-                <ul><i class="fa-solid fa-house"></i><a href="../index.html">Inicio</a></ul>
-                <ul><i class="fa-solid fa-info"></i><a href="./nosotros.html">Sobre Nosotros</a></ul>
-                <ul><i class="fa-solid fa-user"></i><a href="./carrito.html">Mi cuenta</a></ul>
-            </nav>
-            <div class="search-bar">
-                <input type="text">
-                <div class="action">
-                    <button>
-                        <span class="material-icons">mic</span>
-                    </button>
-                    <button>
-                        <span class="material-icons">search</span>
-                    </button>
-                </div>
-            </div> 
-            <nav>
-                <ul>
-                    <li><a href="#">Categoria</a>
-                        <ul>
-                            <li><a href="./celulares.html">Celulares</a></li>
-                            <li><a href="./hardware.html">Hardware</a></li>
-                            <li><a href="./perifericos.html">Perifericos</a></li>
-                            <li><a href="./software.html">Software</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./ofertas.html">Ofertas</a></li>
-                    <li><a href="./giftcard.html">GiftCard</a></li>
-                    <li><a href="./carrito.html">Carrito</a></li>
-                    <li><a href="#ayuda">Ayuda</a></li>
-                </ul>
-            </nav>
+    <header>  
+        <div class="cont-header">
+            <div class="cont">
+                <a href="../index.html"><img class="cont-logo" src="../img/icono.png" alt="logo" width="200px"></a>
+                <h1 class="logo-nombre">Tienda Online</h1>
+                <!-- <div class="search-bar">
+                    <input type="text">
+                    <div class="action">
+                        <button>
+                            <span class="material-icons">mic</span>
+                        </button>
+                        <button>
+                            <span class="material-icons">search</span>
+                        </button>
+                    </div>
+                </div>  -->
+                <nav class="cont-nav">
+                    <ul class="nav-links">                    
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="../pages/inicio.html">Inicio de sesion</a></li>
+                    </ul>
+                </nav>
+            </div>        
+            <div class="cont-cate">
+                <nav class="cont_nav_categorias">
+                    <ul class="cont-ul">
+                        <li><a class="menu_item" href="#">Categoria</a>
+                            <ul class="cont-sub-cate">
+                                <li><a href="../pages/celulares.html">Celulares</a></li>
+                                <li><a href="../pages/hardware.html">Hardware</a></li>
+                                <li><a href="../pages/perifericos.html">Perifericos</a></li>
+                                <li><a href="../pages/software.html">Software</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_item"><a href="../pages/ofertas.html">Ofertas</a></li>
+                        <li class="menu_item"><a href="../pages/giftcard.html">GiftCard</a></li> 
+                        <li class="menu_item"><a href="../pages/carrito.html">Carrito</a></li>
+                        <li class="menu_item"><a href="#ayuda">Ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
         <div>  
@@ -53,32 +61,35 @@
             <p>Proximamente etiquetas desplegables con Informacion de la cuenta</p>
         </div>
     </main>
-    <section id="ayuda">
-        <div class="cont-ayuda">
-            <h4>Ayuda</h4>
-            <a href="./ayuda.html">Preguntas Frecuentes</a>
-            <a href="./ayuda.html">Soporte tecnico</a>
-        </div>
-    </section>
-    <section id="contacto">
-        <div class="cont-contacto">
-            <h4>Redes Sociales</h4>
-            <ul><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/walter.schwartzer/">Facebook</a></ul>
-            <ul><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/walterschwartzer/">Instagram</a></ul>
-            <ul><i class="fa-brands fa-twitch"></i><a href="https://www.twitch.tv/x1zon">Twitch</a></ul>
-            <ul><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/WalterXizon">Twitter</a></ul>
-        </div>
-    </section>
-    <section id="nosotros">
-        <div class="cont-nosotros">
-            <h4>Nosotros</h4>
-            <a href="./nosotros.html">Informacion de la Empresa</a>
-            <a href="./nosotros.html">Trabaja con Nosotros</a>
-        </div>
-    </section>
     <footer>
-        <div class="cont-footer">
-            <p>&copy;Tienda Online 2023</p>
+        <div class="cont-general">
+            <div id="ayuda">
+                <div class="cont-footer">
+                    <h3>Ayuda</h3>
+                    <a href="../pages/ayuda.html">Preguntas Frecuentes</a>
+                    <a href="../pages/ayuda.html">Soporte tecnico</a>
+                </div>
+            </div>
+            <div id="contacto">
+            <div class="cont-footer">
+                <h3>Redes Sociales</h3>
+                <ul><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/walter.schwartzer/" target="_blank"> Facebook</a></ul>
+                <ul><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/walterschwartzer/" target="_blank"> Instagram</a></ul>
+                <ul><i class="fa-brands fa-twitch"></i><a href="https://www.twitch.tv/x1zon" target="_blank"> Twitch</a></ul>
+                <ul><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/WalterXizon" target="_blank"> Twitter</a></ul>
+            </div>
+            </div>
+            <div id="nosotros">
+                <div class="cont-footer">
+                    <h3>Nosotros</h3>
+                    <a href="../pages/nosotros.html">Informacion de la Empresa</a>
+                    <a href="../pages/nosotros.html">Trabaja con Nosotros</a>
+                </div>
+            </div>
+        </div>
+        <div class="cont-copy">
+            <hr>
+            <p> Todos los derechos reservados © 2023 <b> TiendaOnline </b> </p>
         </div>
     </footer>
 </body>

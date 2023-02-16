@@ -100,26 +100,6 @@ header .cont-header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
   margin: auto 30px;
 }
 
-main .cont-main h2 {
-  font-size: 32px;
-  margin-top: 5%;
-  display: flex;
-}
-main .cont-main .cont-img {
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-main .cont-main .cont-img p {
-  font-size: 1.1em;
-  color: #fff;
-  text-align: center;
-}
-main .cont-main img:hover {
-  transform: scale(1.1);
-}
-
 footer {
   width: 100%;
   padding: 50px 0;
@@ -166,4 +146,4 @@ footer .cont-copy hr {
   height: 1px;
   background-color: #7a7a7a;
   border: none;
-}/*# sourceMappingURL=style-index.css.map */
+}/*# sourceMappingURL=style-ayuda.css.map */
