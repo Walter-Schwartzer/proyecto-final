@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  font-family: "PT Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(203, 167, 167);
+  text-decoration: none;
+}
+
+body main .cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 97vh;
+  color: #fff;
+  background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
+}
+body main .cont .login-form .cont-check {
+  display: flex;
+  justify-content: space-around;
+}
+body main .cont .login-form .cont-check input {
+  margin: 0;
+  width: 4%;
+  cursor: pointer;
+}
+body main .cont .form-body {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin: 10px;
+}
+body main .cont .form-body .text-form {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+}
+body main .cont .form-body .login-form .opciones {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+body main .cont .form-body .cont-opciones {
+  text-align: center;
+  width: 100%;
+}
+body main .cont input {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+body main .cont ::-moz-placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.596);
+}
+body main .cont ::placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.596);
+}
+body main .cont input:hover {
+  transition: 0.5s;
+  border: 1px solid #2980b9;
+  color: #2498db;
+}
+body main .cont button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 78%;
+  background: transparent;
+  color: #b9c4c6;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 1px solid #2988b9;
+}
+body main .cont .form-body input[type=password] {
+  margin-top: 20px;
+}
+body main .cont .form-body button:hover {
+  color: #d5dbdd;
+  border: 2px solid #3498db;
+  background: linear-gradient(#34495e, #2c3e50);
+}
+body footer {
+  text-align: justify;
+}/*# sourceMappingURL=style-inicio.css.map */
