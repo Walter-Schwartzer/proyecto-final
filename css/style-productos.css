@@ -100,6 +100,44 @@ header .cont-header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
   margin: auto 30px;
 }
 
+main .cont-general {
+  border: 3px solid rgba(180, 51, 209, 0.7098039216);
+}
+main .cont-general .cont-producto {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 120px;
+}
+main .cont-general .cont-producto .cont-tittle {
+  display: flex;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  flex-direction: column;
+  margin-left: 25px;
+}
+main .cont-general .cont-producto .cont-tittle p {
+  margin: 15px 0;
+  font-size: 20px;
+}
+main .cont-general .cont-producto .cont-tittle h2 {
+  font-size: 1.7em;
+}
+main .cont-general .cont-producto .cont-tittle button {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: rgba(178, 99, 149, 0.5215686275);
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+main .cont-general .cont-producto .cont-tittle button:hover {
+  background-color: rgba(255, 255, 255, 0.4196078431);
+  color: #e880e3;
+}
+
 footer {
   width: 100%;
   padding: 50px 0;

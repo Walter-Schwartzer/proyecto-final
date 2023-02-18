@@ -105,7 +105,45 @@ header{
     }
 }
 
-
+main{
+    .cont-general{
+        border: 3px solid #b433d1b5;
+        .cont-producto{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 120px;
+        .cont-tittle{
+            display: flex;
+            padding-bottom: 8px;
+            padding-right: 10px;
+            flex-direction: column;
+            margin-left: 25px;
+            p{
+                margin: 15px 0;
+                font-size: 20px;
+            }
+            h2{
+                font-size: 1.7em;
+            }
+            button{
+                width: 150px;
+                height: 50px;
+                margin-bottom: 10px;
+                background-color: #b2639585;
+                color: #000000;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #ffffff6b;
+                color: #e880e3;
+                }
+            }
+        }   
+    }
+}
 
 footer{
     width: 100%;
