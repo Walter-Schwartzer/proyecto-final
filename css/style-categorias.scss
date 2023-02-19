@@ -193,7 +193,7 @@ footer{
                     left: 0;
                 }
                 .cont-ul{
-                    position: fixed;
+                    position: absolute;
                     width: 100%;
                     height: 40vh;
                     background-color: #000000f0;
@@ -234,6 +234,46 @@ footer{
         .cont-img{
             flex-direction: column;
             align-items: center;
+        }
+    }
+}
+
+//responsive otras medidas
+@media screen and (max-width: 699px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                width: 115px;
+            }
+            .logo-nombre{
+                position: absolute;
+                left: 130px;
+                font-size: 25px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+//responsive otras medidas v2
+@media screen and (max-width: 488px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                width: 90px;
+                height: 65px;
+            }
+            .logo-nombre{
+                position: absolute;
+                font-size: 20px;
+                left: 90px;
+            }
+            .cont-nav{
+                .nav-links{
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
         }
     }
 }
