@@ -162,6 +162,46 @@ footer{
 }
 
 //responsive
+@media screen and (max-width: 926px){
+    .cont-header{
+        .cont-cate{
+            .cont-ul{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//responsive desaparicion ayuda
+@media screen and (max-width: 905px){
+    .cont-header{
+        .cont-cate{
+            .cont_nav_categorias{
+                .cont-ul{
+                    .cate_menu{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    .cont-header{
+        .cont{
+            .logo-nombre{
+                margin-left: -20px;
+            }
+            .cont-cate{
+                margin-left: -20px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+//responsive otras medidas
 @media screen and (max-width: 720px){
     .cont-header{
         .cont{
@@ -238,7 +278,7 @@ footer{
     }
 }
 
-//responsive otras medidas
+//responsive otras medidas v2
 @media screen and (max-width: 699px){
     .cont-header{
         .cont{
@@ -255,7 +295,7 @@ footer{
     }
 }
 
-//responsive otras medidas v2
+//responsive otras medidas v3
 @media screen and (max-width: 488px){
     .cont-header{
         .cont{
@@ -272,6 +312,45 @@ footer{
                 .nav-links{
                     font-size: 14px;
                     margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+//responsive otras medidas v4
+@media screen and (max-width: 413px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                width: 70px;
+                height: 60px;
+                position: absolute;
+                left: 10px;
+                top: 15px;
+            }
+            .logo-nombre{
+                position: absolute;
+                left: 40px;
+            }
+        }
+    }
+}
+
+//responsive otras medidas v5
+@media screen and (max-width: 350px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                left: 5px;
+            }
+            .logo-nombre{
+                left: 30px;
+                font-size: 18px;
+            }
+            .cont-nav{
+                .nav-links{
+                    font-size: 13px;
                 }
             }
         }

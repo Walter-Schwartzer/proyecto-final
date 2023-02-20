@@ -4,4 +4,4 @@
 //     document.querySelector(".nav-links").classList.toggle("mostar_menu")
 // }
 
-alert("Bienvenido a mi pagina web")
+//alert("Bienvenido a mi pagina web")

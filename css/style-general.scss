@@ -34,6 +34,7 @@ body{
         padding: 5px 10%;
         h1{
             font-size: 30px;
+            left: 230px;
         }
         .logo-nombre{
             margin-right: auto;
@@ -187,28 +188,43 @@ footer{
 }
 
 //responsive
-// @media screen and (max-width: 930px){
-//     .cont-header{
-//         .cont{
-//             .cont-cate{
-//                 font-size: 15px;
-//             }
-//         }
-//     }
-// }
-// @media screen and (max-width: 830px){
-//     .cont-header{
-//         .cont{
-//             .logo-nombre{
-//                 margin-left: -20px;
-//             }
-//             .cont-cate{
-//                 margin-left: -20px;
-//                 font-size: 13px;
-//             }
-//         }
-//     }
-// }
+@media screen and (max-width: 926px){
+    .cont-header{
+        .cont-cate{
+            .cont-ul{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//responsive desaparicion ayuda
+@media screen and (max-width: 905px){
+    .cont-header{
+        .cont-cate{
+            .cont_nav_categorias{
+                .cont-ul{
+                    .cate_menu{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    .cont-header{
+        .cont{
+            .logo-nombre{
+                margin-left: -20px;
+            }
+            .cont-cate{
+                margin-left: -20px;
+                font-size: 13px;
+            }
+        }
+    }
+}
 
 
 //responsive otras medidas
@@ -322,6 +338,45 @@ footer{
                 .nav-links{
                     font-size: 14px;
                     margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+//responsive otras medidas v4
+@media screen and (max-width: 413px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                width: 70px;
+                height: 60px;
+                position: absolute;
+                left: 10px;
+                top: 15px;
+            }
+            .logo-nombre{
+                position: absolute;
+                left: 40px;
+            }
+        }
+    }
+}
+
+//responsive otras medidas v5
+@media screen and (max-width: 350px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                left: 5px;
+            }
+            .logo-nombre{
+                left: 30px;
+                font-size: 18px;
+            }
+            .cont-nav{
+                .nav-links{
+                    font-size: 13px;
                 }
             }
         }
