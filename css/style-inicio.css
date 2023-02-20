@@ -20,6 +20,21 @@ body main .cont {
   color: #fff;
   background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
 }
+body main .cont .login-form .cont-terminos {
+  display: flex;
+}
+body main .cont .login-form .cont-terminos input {
+  margin: 0;
+  width: 4%;
+  margin-top: -10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+body main .cont .login-form .cont-terminos p {
+  margin-right: 35px;
+  font-size: 15px;
+}
 body main .cont .login-form .cont-check {
   display: flex;
   justify-content: space-around;
@@ -42,15 +57,27 @@ body main .cont .form-body {
   border-bottom-right-radius: 50%;
   margin: 10px;
 }
+body main .cont .form-body .cont_back {
+  text-align: center;
+  margin-bottom: 8px;
+}
+body main .cont .form-body .bienvenida {
+  font-size: 1.6rem;
+  text-align: center;
+}
 body main .cont .form-body h1 {
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 body main .cont .form-body .text-form {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 25px;
+}
+body main .cont .form-body .text-form p {
+  margin-bottom: 5px;
 }
 body main .cont .form-body .login-form .opciones {
   margin: 0;
@@ -69,6 +96,7 @@ body main .cont input {
   display: block;
   margin: auto;
   height: 40px;
+  margin-bottom: 25px;
   width: 75%;
   padding-left: 10px;
   color: #fff;
