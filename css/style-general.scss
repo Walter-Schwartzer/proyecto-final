@@ -514,7 +514,6 @@ body{
                 margin-top: -9px;
             }
         }
-
         input{
             display: block;
             margin: 15px 0;
@@ -527,6 +526,11 @@ body{
             font-size: 1rem;
             outline: none;
         } 
+        .cont-enviar{
+            cursor: pointer;
+            text-align: center;
+            width: 40%;
+        }
     }
 }
 
@@ -579,6 +583,142 @@ body{
         button:hover{
             background: #848080c6;
             color: #fff;
+        }
+    }
+}
+
+//Ayuda/Preguntas Frecuentes
+.cont-general-help{
+    margin: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .tab{
+        position: relative;
+        padding: 0 20px 20px;
+        background-color: #e99aec9e;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 15px 0;
+        input{
+            appearance: none;
+            &:checked{
+                ~{
+                    label{
+                        &::after{
+                            content: "+";
+                            color: rgb(57, 45, 226);
+                            transform: rotate(135deg);
+                        }
+                        h2{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        color: rgba(255, 255, 255, 0.2);
+                        font-size: 8em;
+                        justify-content: flex-end;
+                        padding: 20px;
+                        }
+                        h3{
+                        background: #fff;
+                        padding: 2px 10px;
+                        color: #333;
+                        border-radius: 2px;
+                        box-shadow: 0 5px 15px rgba(0 , 0 , 0 , 0.05);
+                        }
+                    }
+                .content{
+                    max-height: 100vh;
+                    transition: 1s;
+                    p{
+                        color: #fffdfd;
+                    }
+                }
+            }
+        }
+        }
+        label{
+        display: inline-block;
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+        cursor: pointer;
+        &::after{
+            content: "+";
+            position: absolute;
+            right: 20px;
+            font-size: 2em;
+            color: rgba(0,0,0,0.1);
+            transition: transform 1s;
+        }
+        h2{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.25em;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        h3{
+            position: relative;
+            font-weight: 500;
+            color: #fff9f9;
+            z-index: 10;
+        }
+        }
+        &:hover{
+        label{
+            &::after{
+                color: #333;
+            }
+        }
+        }
+        .content{
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+            p{
+            position: relative;
+            padding: 10px 0;
+            color: #333;
+            z-index: 10;
+            }
+        }
+    }
+    .cont-contactanos{
+        p{
+            font-size: 16px;
+        }
+        input{
+            display: block;
+            margin: 15px 0;
+            height: 40px;
+            width: 17%;
+            padding-left: 10px;
+            color: #000000;
+            border: 1px solid  #d5a8a835;
+            border-radius: 3px;
+            font-size: 1rem;
+            outline: none;
+        } 
+        .cont-enviar{
+            cursor: pointer;
+            text-align: center;
+            width: 7%;
+        }
+        .cont-text-area{
+            resize: none;
+            width: 17%;
         }
     }
 }
@@ -688,6 +828,19 @@ footer{
             }
         }
     }
+    .cont-general-help{
+        .cont-contactanos{
+            input{
+                width: 250px;
+            }
+            .cont-text-area{
+                width: 250px;
+            }
+            .cont-enviar{
+                width: 200px;
+            }
+        }
+    }
 }
 
 //responsive otras medidas
@@ -784,8 +937,42 @@ footer{
     }
 }
 
+//responsive ayuda
+@media screen and (max-width: 690px){
+    .cont-header{
+        width: 100%;
+    }
+    .cont-general-help{
+        margin: 15px 0;
+        margin-left: 15px;
+        .cont{
+            .tab{
+                width: 400px;
+                margin-right: 0;
+            }
+        }
+        .cont-contactanos{
+            p{
+                font-size: 13px;
+            }
+            input{
+                width: 200px;
+            }
+            .cont-text-area{
+                width: 200px;
+            }
+            .cont-enviar{
+                width: 130px;
+            }
+        }
+    }
+}
+
 //responsive productos
 @media screen and (max-width: 510px){
+    .cont-header{
+        width: 100%;
+    }
     .cont-hospc{
         .cont-ttsubtt{
             text-align: center;
@@ -836,6 +1023,37 @@ footer{
     }
 }
 
+//ayuda
+@media screen and (max-width: 420px){
+    .cont-general-help{
+        margin: 15px 0;
+        margin-left: 15px;
+        h2{
+            font-size: 25px;
+        }
+        .cont{
+            .tab{
+                width: 350px;
+                margin-right: 0;
+            }
+        }
+        .cont-contactanos{
+            p{
+                font-size: 12px;
+            }
+            input{
+                width: 200px;
+            }
+            .cont-text-area{
+                width: 200px;
+            }
+            .cont-enviar{
+                width: 130px;
+            }
+        }
+    }
+}
+
 //responsive otras medidas v4
 @media screen and (max-width: 413px){
     .cont-header{
@@ -850,6 +1068,37 @@ footer{
             .logo-nombre{
                 position: absolute;
                 left: 40px;
+            }
+        }
+    }
+}
+
+//ayuda
+@media screen and (max-width: 375px){
+    .cont-header{
+        width: 100%;
+    }
+    .cont-general-help{
+        margin: 15px 0;
+        margin-left: 15px;
+        .cont{
+            .tab{
+                width: 290px;
+                margin-right: 0;
+            }
+        }
+        .cont-contactanos{
+            p{
+                font-size: 12px;
+            }
+            input{
+                width: 200px;
+            }
+            .cont-text-area{
+                width: 200px;
+            }
+            .cont-enviar{
+                width: 130px;
             }
         }
     }

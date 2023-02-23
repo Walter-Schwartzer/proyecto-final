@@ -491,6 +491,11 @@ body {
   font-size: 1rem;
   outline: none;
 }
+.cont-general-nosotros .cont-trabaja-nosotros .cont-enviar {
+  cursor: pointer;
+  text-align: center;
+  width: 40%;
+}
 
 .cont-carrito {
   margin-left: 30px;
@@ -542,6 +547,131 @@ body {
 .cont-carrito .cont-compra button:hover {
   background: rgba(132, 128, 128, 0.7764705882);
   color: #fff;
+}
+
+.cont-general-help {
+  margin: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cont-general-help h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.cont-general-help .tab {
+  position: relative;
+  padding: 0 20px 20px;
+  background-color: rgba(233, 154, 236, 0.6196078431);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.cont-general-help .tab input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.cont-general-help .tab input:checked ~ label::after {
+  content: "+";
+  color: rgb(57, 45, 226);
+  transform: rotate(135deg);
+}
+.cont-general-help .tab input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8em;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.cont-general-help .tab input:checked ~ label h3 {
+  background: #fff;
+  padding: 2px 10px;
+  color: #333;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.cont-general-help .tab input:checked ~ .content {
+  max-height: 100vh;
+  transition: 1s;
+}
+.cont-general-help .tab input:checked ~ .content p {
+  color: #fffdfd;
+}
+.cont-general-help .tab label {
+  display: inline-block;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  cursor: pointer;
+}
+.cont-general-help .tab label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+.cont-general-help .tab label h2 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.cont-general-help .tab label h3 {
+  position: relative;
+  font-weight: 500;
+  color: #fff9f9;
+  z-index: 10;
+}
+.cont-general-help .tab:hover label::after {
+  color: #333;
+}
+.cont-general-help .tab .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.cont-general-help .tab .content p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+.cont-general-help .cont-contactanos p {
+  font-size: 16px;
+}
+.cont-general-help .cont-contactanos input {
+  display: block;
+  margin: 15px 0;
+  height: 40px;
+  width: 17%;
+  padding-left: 10px;
+  color: #000000;
+  border: 1px solid rgba(213, 168, 168, 0.2078431373);
+  border-radius: 3px;
+  font-size: 1rem;
+  outline: none;
+}
+.cont-general-help .cont-contactanos .cont-enviar {
+  cursor: pointer;
+  text-align: center;
+  width: 7%;
+}
+.cont-general-help .cont-contactanos .cont-text-area {
+  resize: none;
+  width: 17%;
 }
 
 footer {
@@ -617,6 +747,15 @@ footer .cont-copy hr {
   .cont-header .cont .cont-cate {
     margin-left: -20px;
     font-size: 13px;
+  }
+  .cont-general-help .cont-contactanos input {
+    width: 250px;
+  }
+  .cont-general-help .cont-contactanos .cont-text-area {
+    width: 250px;
+  }
+  .cont-general-help .cont-contactanos .cont-enviar {
+    width: 200px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -697,7 +836,35 @@ footer .cont-copy hr {
     margin-left: 30px;
   }
 }
+@media screen and (max-width: 690px) {
+  .cont-header {
+    width: 100%;
+  }
+  .cont-general-help {
+    margin: 15px 0;
+    margin-left: 15px;
+  }
+  .cont-general-help .cont .tab {
+    width: 400px;
+    margin-right: 0;
+  }
+  .cont-general-help .cont-contactanos p {
+    font-size: 13px;
+  }
+  .cont-general-help .cont-contactanos input {
+    width: 200px;
+  }
+  .cont-general-help .cont-contactanos .cont-text-area {
+    width: 200px;
+  }
+  .cont-general-help .cont-contactanos .cont-enviar {
+    width: 130px;
+  }
+}
 @media screen and (max-width: 510px) {
+  .cont-header {
+    width: 100%;
+  }
   .cont-hospc .cont-ttsubtt {
     text-align: center;
     margin: 0;
@@ -737,6 +904,31 @@ footer .cont-copy hr {
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 420px) {
+  .cont-general-help {
+    margin: 15px 0;
+    margin-left: 15px;
+  }
+  .cont-general-help h2 {
+    font-size: 25px;
+  }
+  .cont-general-help .cont .tab {
+    width: 350px;
+    margin-right: 0;
+  }
+  .cont-general-help .cont-contactanos p {
+    font-size: 12px;
+  }
+  .cont-general-help .cont-contactanos input {
+    width: 200px;
+  }
+  .cont-general-help .cont-contactanos .cont-text-area {
+    width: 200px;
+  }
+  .cont-general-help .cont-contactanos .cont-enviar {
+    width: 130px;
+  }
+}
 @media screen and (max-width: 413px) {
   .cont-header .cont .cont-logo {
     width: 70px;
@@ -748,6 +940,31 @@ footer .cont-copy hr {
   .cont-header .cont .logo-nombre {
     position: absolute;
     left: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cont-header {
+    width: 100%;
+  }
+  .cont-general-help {
+    margin: 15px 0;
+    margin-left: 15px;
+  }
+  .cont-general-help .cont .tab {
+    width: 290px;
+    margin-right: 0;
+  }
+  .cont-general-help .cont-contactanos p {
+    font-size: 12px;
+  }
+  .cont-general-help .cont-contactanos input {
+    width: 200px;
+  }
+  .cont-general-help .cont-contactanos .cont-text-area {
+    width: 200px;
+  }
+  .cont-general-help .cont-contactanos .cont-enviar {
+    width: 130px;
   }
 }
 @media screen and (max-width: 350px) {
