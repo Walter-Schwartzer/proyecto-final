@@ -23,7 +23,6 @@ body{
 }
 
 //estilos del header
-
 .cont-header{
     .cont{
         background: linear-gradient(30deg, #5C0270 50%, #48104F 50%);
@@ -412,6 +411,178 @@ body{
     }
 }
 
+//giftcards
+.cont-giftcard{
+    margin-left: 25px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 15px;
+        margin-top: 20px;
+        padding: 5px 0;
+    }
+}
+
+//Cuenta
+.cont-cuenta{
+    .cont-tittle-cuenta{
+        h2{
+            text-align: start;
+            margin-left: 25px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-top: 25px;
+        }
+    }
+    .cont-general-cuenta{
+        //border: 1px solid #b49cbf;
+        margin-left: 25px;
+        // align-items: center;
+        // text-align: center;
+        .cont-datos-cuenta{
+            margin-top: 20px;
+            h3{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 30px;
+                span{
+                    font-size: 22px;
+                    color: #db90e4;
+                }
+            }
+        }   
+        .cont-datos-personales{
+            margin-top: 20px;
+            h3{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 30px;
+                span{
+                    font-size: 22px;
+                    color: #db90e4;
+                }
+            }
+        }     
+    }
+
+}
+
+//Trabaja con Nosotros
+.cont-general-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: 25px;
+    .cont-info-nosotros{
+        padding: 5px 0;
+        h2{
+            font-size: 2.3rem;
+        }
+        p{
+            margin-top: 10px;
+            padding-top: 5px;
+            font-size: 20px;
+        }
+    }
+    .cont-trabaja-nosotros{
+        h3{
+            font-size: 2rem;
+            margin: 15px 0;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+        .cont-file{
+            border: none;
+            margin-left: -10px;
+            color: #fff;
+        }
+        .cont-label-nosotros{
+            display: flex;
+            p{
+                margin-left: 15px;
+                font-size: 18px;
+            }
+            input{
+                width: 5%;
+                margin-top: -9px;
+            }
+        }
+
+        input{
+            display: block;
+            margin: 15px 0;
+            height: 40px;
+            width: 75%;
+            padding-left: 10px;
+            color: #000000;
+            border: 1px solid  #d5a8a835;
+            border-radius: 2px;
+            font-size: 1rem;
+            outline: none;
+        } 
+    }
+}
+
+//Carrito
+.cont-carrito{
+    margin-left: 30px;
+    margin-top: 20px;
+    h2{
+        font-size: 2.6rem;
+    }
+    .cont-articulo{
+        margin: 30px 30px;
+        cursor: pointer;
+        img{
+            width: 10%;
+            border: solid 1px #000000;
+            background-color: #b8a9a928;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 18px;
+            position: absolute;
+        }
+        p:hover{
+            color: #d680ec;
+        }
+    }
+    .cont-compra{
+        margin-left: 30px;
+        p{
+            margin-top: 50px;
+            font-size: 1.3rem;
+        }
+        button{
+            margin-top: 15px;
+            width: 6%;
+            height: 40px;
+            position: absolute;
+            left: 120px;
+            cursor: pointer;
+            background: #fff;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 800;
+        }
+        button:hover{
+            background: #848080c6;
+            color: #fff;
+        }
+    }
+}
+
 //estilos del footer
 footer{
     width: 100%;
@@ -462,6 +633,24 @@ footer{
 }
 
 //responsive
+
+//responsive carrito
+@media screen and (max-width: 980px){
+    .cont-carrito{
+        .cont-articulo{
+            img{
+                width: 140px;
+            }
+        }
+        .cont-compra{
+            button{
+                width: 110px;
+            }
+        }
+    }
+}
+
+//responsive header
 @media screen and (max-width: 926px){
     .cont-header{
         .cont-cate{
@@ -486,6 +675,7 @@ footer{
         }
     }
 }
+
 @media screen and (max-width: 860px){
     .cont-header{
         .cont{

@@ -387,6 +387,163 @@ body {
   transform: scale(1.1);
 }
 
+.cont-giftcard {
+  margin-left: 25px;
+  margin-top: 20px;
+  padding: 0px 10px;
+}
+.cont-giftcard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.cont-giftcard p {
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 5px 0;
+}
+
+.cont-cuenta .cont-tittle-cuenta h2 {
+  text-align: start;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-top: 25px;
+}
+.cont-cuenta .cont-general-cuenta {
+  margin-left: 25px;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-cuenta {
+  margin-top: 20px;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-cuenta h3 {
+  font-size: 2rem;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-cuenta p {
+  font-size: 30px;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-cuenta p span {
+  font-size: 22px;
+  color: #db90e4;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-personales {
+  margin-top: 20px;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-personales h3 {
+  font-size: 2rem;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-personales p {
+  font-size: 30px;
+}
+.cont-cuenta .cont-general-cuenta .cont-datos-personales p span {
+  font-size: 22px;
+  color: #db90e4;
+}
+
+.cont-general-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.cont-general-nosotros .cont-info-nosotros {
+  padding: 5px 0;
+}
+.cont-general-nosotros .cont-info-nosotros h2 {
+  font-size: 2.3rem;
+}
+.cont-general-nosotros .cont-info-nosotros p {
+  margin-top: 10px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+.cont-general-nosotros .cont-trabaja-nosotros h3 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+.cont-general-nosotros .cont-trabaja-nosotros h4 {
+  font-size: 1.6rem;
+}
+.cont-general-nosotros .cont-trabaja-nosotros .cont-file {
+  border: none;
+  margin-left: -10px;
+  color: #fff;
+}
+.cont-general-nosotros .cont-trabaja-nosotros .cont-label-nosotros {
+  display: flex;
+}
+.cont-general-nosotros .cont-trabaja-nosotros .cont-label-nosotros p {
+  margin-left: 15px;
+  font-size: 18px;
+}
+.cont-general-nosotros .cont-trabaja-nosotros .cont-label-nosotros input {
+  width: 5%;
+  margin-top: -9px;
+}
+.cont-general-nosotros .cont-trabaja-nosotros input {
+  display: block;
+  margin: 15px 0;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+  color: #000000;
+  border: 1px solid rgba(213, 168, 168, 0.2078431373);
+  border-radius: 2px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.cont-carrito {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.cont-carrito h2 {
+  font-size: 2.6rem;
+}
+.cont-carrito .cont-articulo {
+  margin: 30px 30px;
+  cursor: pointer;
+}
+.cont-carrito .cont-articulo img {
+  width: 10%;
+  border: solid 1px #000000;
+  background-color: rgba(184, 169, 169, 0.1568627451);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.cont-carrito .cont-articulo h3 {
+  font-size: 1.3rem;
+}
+.cont-carrito .cont-articulo p {
+  font-size: 18px;
+  position: absolute;
+}
+.cont-carrito .cont-articulo p:hover {
+  color: #d680ec;
+}
+.cont-carrito .cont-compra {
+  margin-left: 30px;
+}
+.cont-carrito .cont-compra p {
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+.cont-carrito .cont-compra button {
+  margin-top: 15px;
+  width: 6%;
+  height: 40px;
+  position: absolute;
+  left: 120px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.cont-carrito .cont-compra button:hover {
+  background: rgba(132, 128, 128, 0.7764705882);
+  color: #fff;
+}
+
 footer {
   width: 100%;
   padding: 50px 0;
@@ -435,6 +592,14 @@ footer .cont-copy hr {
   border: none;
 }
 
+@media screen and (max-width: 980px) {
+  .cont-carrito .cont-articulo img {
+    width: 140px;
+  }
+  .cont-carrito .cont-compra button {
+    width: 110px;
+  }
+}
 @media screen and (max-width: 926px) {
   .cont-header .cont-cate .cont-ul {
     font-size: 15px;
