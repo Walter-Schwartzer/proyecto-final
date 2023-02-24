@@ -816,7 +816,8 @@ footer{
     }
 }
 
-@media screen and (max-width: 860px){
+//header
+@media screen and (max-width: 870px){
     .cont-header{
         .cont{
             .logo-nombre{
@@ -825,6 +826,15 @@ footer{
             .cont-cate{
                 margin-left: -20px;
                 font-size: 13px;
+            }
+        }
+    }
+    .cont-main{
+        .cont-img{
+            text-align: center;
+            align-items: center;
+            img{
+                width: 200px;
             }
         }
     }
@@ -839,6 +849,49 @@ footer{
             .cont-enviar{
                 width: 200px;
             }
+        }
+    }
+}
+
+//header
+@media screen and (max-width: 830px){
+    .cont-header{
+        .cont{
+            display: flex;
+            h1{
+                font-size: 25px;
+            }
+            .cont-logo{
+                width: 100px;
+                height: 75px;
+            }
+        }
+        .cont-nav{
+            font-size: 14px;
+        }
+        .cont-cate{
+            .cont_nav_categorias{
+                display: flex;
+                justify-content: flex-end;
+                .cont-ul{
+                    margin-left: -15px;
+                }
+                .menu_item{
+                    font-size: 13px;
+                }     
+            }
+
+        }
+    }
+    .cont-main{
+        h2{
+            font-size: 2.1rem;
+            text-align: center;
+        }
+        .cont-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -920,9 +973,10 @@ footer{
     }
 }
 
-//responsive otras medidas v2
+//responsive header
 @media screen and (max-width: 699px){
     .cont-header{
+        width: 100%;
         .cont{
             .cont-logo{
                 width: 115px;
@@ -937,11 +991,8 @@ footer{
     }
 }
 
-//responsive ayuda
+//responsive ayuda y productos
 @media screen and (max-width: 690px){
-    .cont-header{
-        width: 100%;
-    }
     .cont-general-help{
         margin: 15px 0;
         margin-left: 15px;
@@ -963,6 +1014,40 @@ footer{
             }
             .cont-enviar{
                 width: 130px;
+            }
+        }
+    }
+    .cont-general{
+        border: none;
+        .cont-producto{
+            margin-bottom: 100px;
+            .cont-tittle{
+                margin-left: 0;
+                p{
+                    font-size: 18px ;
+                }
+                h2{
+                    font-size: 1.5em;
+                }
+            }
+            img{
+                width: 250px;
+            }
+        }
+        .cont-descripcion{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cont-caracteristicas{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
             }
         }
     }
@@ -1023,8 +1108,23 @@ footer{
     }
 }
 
-//ayuda
+//ayuda y header
 @media screen and (max-width: 420px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                width: 70px;
+                height: 60px;
+                position: absolute;
+                left: 10px;
+                top: 15px;
+            }
+            .logo-nombre{
+                position: absolute;
+                left: 40px;
+            }
+        }
+    }
     .cont-general-help{
         margin: 15px 0;
         margin-left: 15px;
@@ -1054,114 +1154,7 @@ footer{
     }
 }
 
-//responsive otras medidas v4
-@media screen and (max-width: 413px){
-    .cont-header{
-        .cont{
-            .cont-logo{
-                width: 70px;
-                height: 60px;
-                position: absolute;
-                left: 10px;
-                top: 15px;
-            }
-            .logo-nombre{
-                position: absolute;
-                left: 40px;
-            }
-        }
-    }
-}
-
-//ayuda
-@media screen and (max-width: 375px){
-    .cont-header{
-        width: 100%;
-    }
-    .cont-general-help{
-        margin: 15px 0;
-        margin-left: 15px;
-        .cont{
-            .tab{
-                width: 290px;
-                margin-right: 0;
-            }
-        }
-        .cont-contactanos{
-            p{
-                font-size: 12px;
-            }
-            input{
-                width: 200px;
-            }
-            .cont-text-area{
-                width: 200px;
-            }
-            .cont-enviar{
-                width: 130px;
-            }
-        }
-    }
-}
-
-//responsive otras medidas v5
-@media screen and (max-width: 350px){
-    .cont-header{
-        .cont{
-            .cont-logo{
-                left: 5px;
-            }
-            .logo-nombre{
-                left: 30px;
-                font-size: 18px;
-            }
-            .cont-nav{
-                .nav-links{
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-}
-
-//responsive productos
-@media screen and (max-width: 690px){
-    .cont-general{
-        border: none;
-        .cont-producto{
-            margin-bottom: 100px;
-            .cont-tittle{
-                margin-left: 0;
-                p{
-                    font-size: 18px ;
-                }
-                h2{
-                    font-size: 1.5em;
-                }
-            }
-            img{
-                width: 250px;
-            }
-        }
-        .cont-descripcion{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 15px;
-            }
-        }
-        .cont-caracteristicas{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 15px;
-            }
-        }
-    }
-}
-
+//product
 @media screen and (max-width: 410px){
     .cont-general{
         .cont-producto{
@@ -1196,6 +1189,50 @@ footer{
             }
             p{
                 font-size: 13px;
+            }
+        }
+    }
+}
+
+//ayuda y header
+@media screen and (max-width: 375px){
+    .cont-header{
+        .cont{
+            .cont-logo{
+                left: 5px;
+            }
+            .logo-nombre{
+                left: 30px;
+                font-size: 18px;
+            }
+            .cont-nav{
+                .nav-links{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .cont-general-help{
+        margin: 15px 0;
+        margin-left: 15px;
+        .cont{
+            .tab{
+                width: 290px;
+                margin-right: 0;
+            }
+        }
+        .cont-contactanos{
+            p{
+                font-size: 12px;
+            }
+            input{
+                width: 200px;
+            }
+            .cont-text-area{
+                width: 200px;
+            }
+            .cont-enviar{
+                width: 130px;
             }
         }
     }
