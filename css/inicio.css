@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  font-family: "PT Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(203, 167, 167);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  width: 100%;
+}
+
+.cont-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 97vh;
+  color: #fff;
+  background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
+}
+.cont-inicio .login-form .cont-terminos {
+  display: flex;
+}
+.cont-inicio .login-form .cont-terminos input {
+  margin: 0;
+  width: 4%;
+  margin-top: -10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.cont-inicio .login-form .cont-terminos p {
+  margin-right: 35px;
+  font-size: 15px;
+}
+.cont-inicio .login-form .cont-check {
+  display: flex;
+  justify-content: space-around;
+}
+.cont-inicio .login-form .cont-check input {
+  margin: 0;
+  width: 4%;
+  margin-top: -10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.cont-inicio .login-form .cont-check p {
+  margin-right: 20px;
+}
+.cont-inicio .form-body {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin: 10px;
+}
+.cont-inicio .form-body .cont_back {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.cont-inicio .form-body .bienvenida {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.cont-inicio .form-body h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cont-inicio .form-body .text-form {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+.cont-inicio .form-body .text-form p {
+  margin-bottom: 5px;
+}
+.cont-inicio .form-body .login-form .opciones {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cont-inicio .form-body .login-form a:hover {
+  opacity: 0.8;
+}
+.cont-inicio .form-body .cont-opciones {
+  text-align: center;
+  width: 100%;
+}
+.cont-inicio input {
+  display: block;
+  margin: auto;
+  height: 40px;
+  margin-bottom: 25px;
+  width: 75%;
+  padding-left: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+.cont-inicio ::-moz-placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.596);
+}
+.cont-inicio ::placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.596);
+}
+.cont-inicio input:hover {
+  transition: 0.5s;
+  border: 1px solid #2980b9;
+  color: #2498db;
+}
+.cont-inicio button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 78%;
+  background: transparent;
+  color: #b9c4c6;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 1px solid #2988b9;
+}
+.cont-inicio .form-body input[type=password] {
+  margin-top: 20px;
+}
+.cont-inicio .form-body button:hover {
+  color: #d5dbdd;
+  border: 2px solid #3498db;
+  background: linear-gradient(#34495e, #2c3e50);
+}
+.cont-inicio .cont-back {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.cont-inicio .cont-back a:hover {
+  opacity: 0.8;
+}
+
+.cont-copy {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+.cont-copy p {
+  margin-top: 5px;
+  color: #7a7a7a;
+}
+.cont-copy hr {
+  height: 1px;
+  background-color: #7a7a7a;
+  border: none;
+}/*# sourceMappingURL=inicio.css.map */
