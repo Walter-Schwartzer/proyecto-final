@@ -17,7 +17,7 @@ body {
   width: 100%;
 }
 
-.cont-inicio {
+.cont-inicio-sesion {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,10 +26,10 @@ body {
   color: #fff;
   background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
 }
-.cont-inicio .login-form .cont-terminos {
+.cont-inicio-sesion .login-form .cont-terminos {
   display: flex;
 }
-.cont-inicio .login-form .cont-terminos input {
+.cont-inicio-sesion .login-form .cont-terminos input {
   margin: 0;
   width: 4%;
   margin-top: -10px;
@@ -37,25 +37,25 @@ body {
   margin-right: 5px;
   cursor: pointer;
 }
-.cont-inicio .login-form .cont-terminos p {
+.cont-inicio-sesion .login-form .cont-terminos p {
   margin-right: 35px;
   font-size: 15px;
 }
-.cont-inicio .login-form .cont-check {
+.cont-inicio-sesion .login-form .cont-check {
   display: flex;
   justify-content: space-around;
 }
-.cont-inicio .login-form .cont-check input {
+.cont-inicio-sesion .login-form .cont-check input {
   margin: 0;
   width: 4%;
   margin-top: -10px;
   margin-left: 20px;
   cursor: pointer;
 }
-.cont-inicio .login-form .cont-check p {
+.cont-inicio-sesion .login-form .cont-check p {
   margin-right: 20px;
 }
-.cont-inicio .form-body {
+.cont-inicio-sesion .form-body {
   width: 400px;
   min-width: 300px;
   border-radius: 10px;
@@ -63,42 +63,42 @@ body {
   border-bottom-right-radius: 50%;
   margin: 10px;
 }
-.cont-inicio .form-body .cont_back {
+.cont-inicio-sesion .form-body .cont_back {
   text-align: center;
   margin-bottom: 8px;
 }
-.cont-inicio .form-body .bienvenida {
+.cont-inicio-sesion .form-body .bienvenida {
   font-size: 1.6rem;
   text-align: center;
 }
-.cont-inicio .form-body h1 {
+.cont-inicio-sesion .form-body h1 {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.cont-inicio .form-body .text-form {
+.cont-inicio-sesion .form-body .text-form {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
 }
-.cont-inicio .form-body .text-form p {
+.cont-inicio-sesion .form-body .text-form p {
   margin-bottom: 5px;
 }
-.cont-inicio .form-body .login-form .opciones {
+.cont-inicio-sesion .form-body .login-form .opciones {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 1.5rem;
 }
-.cont-inicio .form-body .login-form a:hover {
+.cont-inicio-sesion .form-body .login-form a:hover {
   opacity: 0.8;
 }
-.cont-inicio .form-body .cont-opciones {
+.cont-inicio-sesion .form-body .cont-opciones {
   text-align: center;
   width: 100%;
 }
-.cont-inicio input {
+.cont-inicio-sesion input {
   display: block;
   margin: auto;
   height: 40px;
@@ -114,20 +114,20 @@ body {
   font-size: 1rem;
   outline: none;
 }
-.cont-inicio ::-moz-placeholder {
+.cont-inicio-sesion ::-moz-placeholder {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.596);
 }
-.cont-inicio ::placeholder {
+.cont-inicio-sesion ::placeholder {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.596);
 }
-.cont-inicio input:hover {
+.cont-inicio-sesion input:hover {
   transition: 0.5s;
   border: 1px solid #2980b9;
   color: #2498db;
 }
-.cont-inicio button {
+.cont-inicio-sesion button {
   display: block;
   margin: auto;
   margin-top: 25px;
@@ -142,20 +142,20 @@ body {
   transition: all 0.5s ease;
   border: 1px solid #2988b9;
 }
-.cont-inicio .form-body input[type=password] {
+.cont-inicio-sesion .form-body input[type=password] {
   margin-top: 20px;
 }
-.cont-inicio .form-body button:hover {
+.cont-inicio-sesion .form-body button:hover {
   color: #d5dbdd;
   border: 2px solid #3498db;
   background: linear-gradient(#34495e, #2c3e50);
 }
-.cont-inicio .cont-back {
+.cont-inicio-sesion .cont-back {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 600;
 }
-.cont-inicio .cont-back a:hover {
+.cont-inicio-sesion .cont-back a:hover {
   opacity: 0.8;
 }
 
