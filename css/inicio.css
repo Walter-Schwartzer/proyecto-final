@@ -58,10 +58,10 @@ body {
 .cont-inicio-sesion .form-body {
   width: 400px;
   min-width: 300px;
-  border-radius: 10px;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  margin: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.1294117647);
+  border: 1px solid #fff;
 }
 .cont-inicio-sesion .form-body .cont_back {
   text-align: center;
@@ -70,6 +70,7 @@ body {
 .cont-inicio-sesion .form-body .bienvenida {
   font-size: 1.6rem;
   text-align: center;
+  margin-top: 15px;
 }
 .cont-inicio-sesion .form-body h1 {
   text-align: center;
@@ -81,9 +82,7 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
-}
-.cont-inicio-sesion .form-body .text-form p {
-  margin-bottom: 5px;
+  margin-top: 15px;
 }
 .cont-inicio-sesion .form-body .login-form .opciones {
   margin: 0;
@@ -154,23 +153,19 @@ body {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 .cont-inicio-sesion .cont-back a:hover {
   opacity: 0.8;
 }
 
-.cont-copy {
+.cont-copy-registro {
   max-width: 1200px;
   margin: auto;
   text-align: center;
   padding: 0 40px;
 }
-.cont-copy p {
+.cont-copy-registro p {
   margin-top: 5px;
   color: #7a7a7a;
-}
-.cont-copy hr {
-  height: 1px;
-  background-color: #7a7a7a;
-  border: none;
 }/*# sourceMappingURL=inicio.css.map */
