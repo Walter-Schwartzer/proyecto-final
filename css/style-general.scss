@@ -32,6 +32,7 @@ body{
     background-size: cover;
     background-position: center center;
     width: 100%;
+    cursor: default;
 }
 
 //estilos del header
@@ -292,19 +293,23 @@ header{
         }
     }
     .cont_product_general{
-        margin-top: 34px;
+        margin-top: 40px;
+        margin-left: 20px;
+        padding: 20px 0;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 50px;
         align-items: center;
         text-align: center;
+        .cont-hospc-product{
+            margin: 0 25px;
+            padding: 0 20px;
+        }
         img{
-            width: 60%;
+            width: 430px;
             margin: 60px 50px;
-            height: 60%;
+            height: 430px;
             align-items: center;
-            text-align: center;
-            object-fit: cover; 
+            text-align: center; 
             background-color: #9c9696a4;
             border: solid 1px #fff;
             border-radius: 5px;
@@ -339,16 +344,15 @@ header{
 
 //Cuenta
 .cont-cuenta{
-    width: 500px;
     .cont-tittle-cuenta{
-        h2{
-            text-align: center;
-            justify-content: center;
+        h2{ 
             font-size: 2.5rem;
-            margin: 25px 0;
+            margin: 25px 25px;
         }
     }
     .cont-general-cuenta{
+        cursor: default;
+        width: 400px;
         border: 3px solid #000000;
         margin-left: 25px;
         background-color: #ffffffcb;
@@ -360,10 +364,10 @@ header{
                 color: #000000;
             }
             p{
-                font-size: 30px;
+                font-size: 25px;
                 color: #000000;
                 span{
-                    font-size: 22px;
+                    font-size: 20px;
                     color: #933b9c;
                 }
             }
@@ -375,10 +379,10 @@ header{
                 color: #000000;
             }
             p{
-                font-size: 30px;
+                font-size: 25px;
                 color: #000000;
                 span{
-                    font-size: 22px;
+                    font-size: 20px;
                     color: #933b9c;
                 }
             }
@@ -681,87 +685,15 @@ footer{
 
 //responsive
 
-//responsive carrito
-@media screen and (max-width: 980px){
-    .cont-main{
-        .cont-img{
-            display: flex;
-            flex-direction: column;
-            a{
-                margin: 15px 0;
-            }
-        }
-    }
-    .cont-carrito{
-        .cont-articulo{
-            img{
-                width: 170px;
-            }
-            p{
-                position: unset;
-            }
-        }
-        .cont-compra{
-            button{
-                width: 90px;
-            }
-        }
-    }
-}
-
-//responsive header
-@media screen and (max-width: 926px){
-    .cont-header{
-        .cont-cate{
-            .cont-ul{
-                font-size: 15px;
-            }
-        }
-    }
-}
-
-//responsive desaparicion ayuda
-@media screen and (max-width: 905px){
-    .cont-header{
-        .cont-cate{
-            .cont_nav_categorias{
-                .cont-ul{
-                    .cate_menu{
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 860px){
-    .cont-header{
-        .cont{
-            .cont-cate{
-                margin-left: -20px;
-                font-size: 13px;
-            }
-        }
-    }
-    .cont-general-help{
-        .cont-contactanos{
-            input{
-                width: 250px;
-            }
-            .cont-text-area{
-                width: 250px;
-            }
-            .cont-enviar{
-                width: 200px;
-            }
-        }
-    }
-}
-
 //responsive otras medidas
-@media screen and (max-width: 720px){
-        .cont-cate{
+@media screen and (max-width: 1000px){
+    .cont-header{
+        flex-direction: column;
+        nav{
+            padding: 10px 0;
+        }
+    }       
+    .cont-cate{
             .cont_nav_categorias{
                 .checkbtb{
                     display: block;
@@ -776,7 +708,7 @@ footer{
                     width: 100%;
                     height: 40vh;
                     background-color: #000000;
-                    top: 109px;
+                    top: 180px;
                     left: -100%;
                     text-align: center;
                     transition: all 0.5s;
@@ -806,57 +738,24 @@ footer{
                     }
                 }
             }
-        }
+    }
     .cont-main{
-        h2{
-            margin-left: 20px;
-        }
         .cont-img{
+            display: flex;
             flex-direction: column;
-            align-items: center;
             a{
-                margin: 20px 0;
-            }
-        }
-    }
-}
-
-@media (max-width:700px){
-    .cont-header{
-        flex-direction: column;
-        nav{
-            padding: 10px 0;
-        }
-    }       
-    .cont-cate{
-        .cont_nav_categorias{
-            .cont-ul{
-                top: 143px;
-                z-index: 10;
-                position: absolute;
-            }
-        }
-    }
-    .cont-main{
-        .cont-img{
-            a{
+                margin: 15px 0;
                 background: none;
                 border: none;
             }
         }
     }
-}
-
-//responsive ayuda
-@media screen and (max-width: 690px){
     .cont-general-help{
-        margin: 15px 0;
-        margin-left: 15px;
+        margin: 10px 20px;
         .cont{
             .tab{
-                width: 400px;
-                margin-right: 0;
-                position: unset;
+                width: 100%;
+                margin-right: 5px;
                 h3{
                     position: unset;
                 }
@@ -882,10 +781,68 @@ footer{
             }
         }
     }
-}
-
-//responsive productos
-@media screen and (max-width: 510px){
+    .cont-carrito{
+        h2{
+            margin-left: inherit;
+        }
+        .cont-articulo{
+            img{
+                width: 170px;
+            }
+            p{
+                position: unset;
+            }
+        }
+        .cont-compra{
+            button{
+                width: 90px;
+            }
+        }
+    }
+    .cont-general{
+        border: none;
+        .cont-producto{
+            margin-bottom: 100px;
+            margin-right: 30px;
+            .cont-img{
+                width: 190px;
+                margin-right: 15px;
+            }
+            .cont-tittle{
+                margin-left: 0;
+                p{
+                    font-size: 18px;
+                    margin-left: -15px;
+                }
+                h2{
+                    font-size: 1.5em;
+                    margin-left: -15px; 
+                }
+                button{
+                    margin-left: -15px;
+                }   
+            }
+            img{
+                width: 250px;
+            }
+        }
+        .cont-descripcion{
+            h3{
+                font-size: 17px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        .cont-caracteristicas{
+            h3{
+                font-size: 17px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
     .cont-hospc{
         .cont-ttsubtt{
             text-align: center;
@@ -899,151 +856,46 @@ footer{
             }
         }
         .cont_product_general{
+            justify-content: center;
+            align-items: center;
             margin: 0;
             img{
-                width: 200px;
+                width: 300px;
+                height: 300px;
             }
             .cont-hospc-product{
-                margin-left: 15px;
+                margin-left: 45px;
+                padding-left: 0px;
                 h3{
                 font-size: 15px;
                 }
             }
         }
     }
-}
-
-//ayuda
-@media screen and (max-width: 420px){
-    .cont-general-help{
-        margin: 15px 0;
-        margin-left: 15px;
-        h2{
-            font-size: 25px;
-        }
-        .cont{
-            .tab{
-                width: 350px;
-                margin-right: 0;
-            }
-        }
-        .cont-contactanos{
-            p{
-                font-size: 12px;
-            }
-            input{
-                width: 200px;
-            }
-            .cont-text-area{
-                width: 200px;
-            }
-            .cont-enviar{
-                width: 130px;
-            }
-        }
-    }
-}
-
-//ayuda
-@media screen and (max-width: 375px){
-    .cont-general-help{
-        margin: 15px 0;
-        margin-left: 15px;
-        .cont{
-            .tab{
-                width: 290px;
-                margin-right: 0;
-            }
-        }
-        .cont-contactanos{
-            p{
-                font-size: 12px;
-            }
-            input{
-                width: 200px;
-            }
-            .cont-text-area{
-                width: 200px;
-            }
-            .cont-enviar{
-                width: 130px;
-            }
-        }
-    }
-}
-
-//responsive productos
-@media screen and (max-width: 690px){
-    .cont-general{
-        border: none;
-        .cont-producto{
-            margin-bottom: 100px;
-            .cont-tittle{
-                margin-left: 0;
-                p{
-                    font-size: 18px ;
-                }
-                h2{
-                    font-size: 1.5em;
-                }
-            }
-            img{
-                width: 250px;
-            }
-        }
-        .cont-descripcion{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 15px;
-            }
-        }
-        .cont-caracteristicas{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 15px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 410px){
-    .cont-general{
-        .cont-producto{
-            margin-right: 30px;
-            .cont-img{
-                width: 190px;
-                margin-right: 15px;
-            }
-            .cont-tittle{
-                h2{
-                    margin-left: -15px;
+    .cont-cuenta{
+        .cont-general-cuenta{
+            width: 300px;
+            .cont-datos-cuenta{
+                h3{
+                    font-size: 1.4em;
                 }
                 p{
-                    margin-left: -15px;
+                    font-size: 1em;
+                    span{
+                        font-size: 1em;
+                    }
                 }
-                button{
-                    margin-left: -15px;
-                }                
             }
-        }
-        .cont-descripcion{
-            h3{
-                font-size: 17px;
-            }
-            p{
-                font-size: 13px;
-            }
-        }
-        .cont-caracteristicas{
-            h3{
-                font-size: 17px;
-            }
-            p{
-                font-size: 13px;
+            .cont-datos-personales{
+                h3{
+                    font-size: 1.4em;
+                }
+                p{
+                    font-size: 1em;
+                    span{
+                        font-size: 1em;
+                    }
+                }
             }
         }
     }
