@@ -5,3 +5,8 @@
 // }
 
 //alert("Bienvenido a mi pagina web")
+
+
+let nombre = prompt ("decime tu nombre");
+
+alert ("bienvenido " + nombre +  " a GamingEX")

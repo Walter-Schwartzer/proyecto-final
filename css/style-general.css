@@ -25,7 +25,12 @@ a {
   text-decoration: none;
 }
 
-body {
+.body-inicio-registro {
+  color: #fff;
+  width: 100%;
+}
+
+.body-general {
   background: url(../img/fondo3.jpg);
   color: #fff;
   background-repeat: no-repeat;
@@ -62,9 +67,6 @@ header .cont-header nav .nav-link:hover {
 }
 header .cont-header nav .cont-a-nav:hover {
   transform: scale(1);
-}
-header .cont-cate .checkbtb {
-  display: none;
 }
 header .cont-cate #icon_bars {
   display: none;
@@ -597,11 +599,153 @@ header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
   width: 17%;
 }
 
+.cont-inicio-sesion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 97vh;
+  color: #fff;
+  background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
+}
+.cont-inicio-sesion .login-form .cont-terminos {
+  display: flex;
+}
+.cont-inicio-sesion .login-form .cont-terminos input {
+  margin: 0;
+  width: 4%;
+  margin-top: -10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.cont-inicio-sesion .login-form .cont-terminos p {
+  margin-right: 35px;
+  font-size: 15px;
+}
+.cont-inicio-sesion .login-form .cont-check {
+  display: flex;
+  justify-content: space-around;
+}
+.cont-inicio-sesion .login-form .cont-check input {
+  margin: 0;
+  width: 4%;
+  margin-top: -10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.cont-inicio-sesion .login-form .cont-check p {
+  margin-right: 20px;
+}
+.cont-inicio-sesion .form-body {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.1294117647);
+  border: 1px solid #fff;
+}
+.cont-inicio-sesion .form-body .cont_back {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.cont-inicio-sesion .form-body .bienvenida {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 15px;
+}
+.cont-inicio-sesion .form-body h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cont-inicio-sesion .form-body .text-form {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 15px;
+}
+.cont-inicio-sesion .form-body .login-form .opciones {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cont-inicio-sesion .form-body .login-form a:hover {
+  opacity: 0.8;
+}
+.cont-inicio-sesion .form-body .cont-opciones {
+  text-align: center;
+  width: 100%;
+}
+.cont-inicio-sesion input {
+  display: block;
+  margin: auto;
+  height: 40px;
+  margin-bottom: 25px;
+  width: 75%;
+  padding-left: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+.cont-inicio-sesion ::-moz-placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.596);
+}
+.cont-inicio-sesion ::placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.596);
+}
+.cont-inicio-sesion input:hover {
+  transition: 0.5s;
+  border: 1px solid #2980b9;
+  color: #2498db;
+}
+.cont-inicio-sesion button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 78%;
+  background: transparent;
+  color: #b9c4c6;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 1px solid #2988b9;
+}
+.cont-inicio-sesion .form-body input[type=password] {
+  margin-top: 20px;
+}
+.cont-inicio-sesion .form-body button:hover {
+  color: #d5dbdd;
+  border: 2px solid #3498db;
+  background: linear-gradient(#34495e, #2c3e50);
+}
+.cont-inicio-sesion .cont-back {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.cont-inicio-sesion .cont-back a:hover {
+  opacity: 0.8;
+}
+
 footer {
   text-align: center;
   align-items: center;
-  width: 100%;
   padding: 50px 0;
+  width: 100%;
 }
 footer .cont-general-footer {
   display: flex;
@@ -639,6 +783,18 @@ footer .cont-copy {
   margin-top: 10px;
 }
 
+.footer-inicio-registro {
+  padding: 0;
+}
+.footer-inicio-registro .cont-copy-registro {
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+.footer-inicio-registro .cont-copy-registro p {
+  color: #7a7a7a;
+}
+
 @media screen and (max-width: 1000px) {
   .cont-header {
     flex-direction: column;
@@ -646,12 +802,15 @@ footer .cont-copy {
   .cont-header nav {
     padding: 10px 0;
   }
-  .cont-cate .cont_nav_categorias .checkbtb {
+  .cont-cate .cont_nav_categorias #icon_bars {
     display: block;
     font-size: 30px;
     margin-left: 20px;
   }
-  .cont-cate .cont_nav_categorias #icon_bars:checked ~ ul {
+  .cont-cate .cont_nav_categorias #icon_bars:hover ~ ul {
+    left: 0;
+  }
+  .cont-cate .cont_nav_categorias .cont-ul:hover {
     left: 0;
   }
   .cont-cate .cont_nav_categorias .cont-ul {
