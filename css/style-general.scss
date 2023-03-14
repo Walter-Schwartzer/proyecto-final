@@ -37,52 +37,27 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 100%;
+    max-width: 100%;
+    width: 1920px;
     cursor: default;
+}
+
+.cont-carrusel{
+    img{
+        width: 300px;
+    }
 }
 
 //estilos del header
 header{
-        .cont-header{
-        display: flex;
-        justify-content: space-around;
-        min-height: 70px;
-        background: linear-gradient(30deg, #5C0270 50%, #48104F 50%);
-        align-items: center;
-        padding: 10px;
-        .logo{
-            display: flex;
-            align-items: center;
-            h1{
-                cursor: default;
-            }
-        }            
-        img{
-                width: 80px;
-            }
-        nav{
-            .nav-link{
-                color: #fff;
-                padding-right: 10px;            
-            }
-            .nav-link:hover{
-                color: #E1B7FF;
-            }
-            .cont-a-nav:hover{
-                transform: scale(1);
-            }      
-
-        }   
-    }
     .cont-cate{
         #icon_bars{
             display: none;
         }
         .cont_nav_categorias{
-            display: flex;
-            max-width: 1920px;  
-            width: 100%;
+            display: flex; 
             background-color: #00000079;
+            height: 60px;
             .cont-ul > li{
                 float: left;
             }
@@ -93,6 +68,7 @@ header{
             list-style-type: none;
                 a{
                     color: #fff;
+                    margin: 0 50px;
                     text-decoration: none;
                     padding: 15px 20px;
                     display: block;
@@ -103,15 +79,15 @@ header{
                 ul{
                 display: none;
                 position: absolute;
-                min-width: 140px;
                 }
                 .cont-sub-cate{
                     background-color: #000000;
                     list-style-type: none;
                     z-index: 10;
-                }
-                .menu_item{
-                    margin: auto 30px;
+                    a{
+                        margin-left: 15px;
+                        text-align: center;
+                    }
                 }
             }
         }  
@@ -120,6 +96,17 @@ header{
 
 //estilos de index principal
 .cont-main{
+    .cont-product-inicio{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .card{
+            background-color: transparent;
+            border: none;
+            text-align: center;
+        }
+    }
     .cont-inicio{
         background: url(../img/fondo-inicio-1.jpg);
         background-position: center;
@@ -127,7 +114,6 @@ header{
         background-size: cover;
         padding-block: 160px;  
         text-align: center;
-
     }        
     h3{
         margin-top: 70px;
@@ -139,40 +125,6 @@ header{
         font-size: 3em;
         margin-top: 5%;
         background-color: #0000002f;
-
-    }
-    .cont-img{
-        margin: 50px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        h3{
-            font-size: 1.3em;
-            color: #fff;
-            text-align: center;
-            align-items: center;
-            margin: 25px 0;
-            border: none;
-        }
-        h3:hover{
-            color: #000000;
-        }
-        img{
-            width: 330px;
-            height: 350px;
-            align-items: center;
-            text-align: center;
-            object-fit: cover;
-        }
-        a{
-            background-color: #9c9696c5;
-            border: solid 1px #fff;
-            border-radius: 5px;
-        }    
-        a:hover{
-        transform: scale(1.1);
-        }
     }
 }
 
@@ -508,121 +460,29 @@ header{
 }
 
 //Ayuda/Preguntas Frecuentes
-.cont-general-help{
-    margin: 15px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    h2{
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    .tab{
-        position: relative;
-        padding: 0 20px 20px;
-        background-color: #e99aec9e;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-        overflow: hidden;
-        margin: 15px 0;
-        input{
-            appearance: none;
-            &:checked{
-                ~{
-                    label{
-                        &::after{
-                            content: "+";
-                            color: rgb(57, 45, 226);
-                            transform: rotate(135deg);
-                            position: absolute;
-                        }
-                        h2{
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        color: rgba(255, 255, 255, 0.2);
-                        font-size: 8em;
-                        justify-content: flex-end;
-                        padding: 20px;
-                        }
-                        h3{
-                        background: #fff;
-                        padding: 2px 10px;
-                        color: #333;
-                        border-radius: 2px;
-                        box-shadow: 0 5px 15px rgba(0 , 0 , 0 , 0.05);
-                        }
-                    }
-                .content{
-                    max-height: 100vh;
-                    transition: 1s;
-                    p{
-                        color: #fffdfd;
-                    }
-                }
+.cont-preguntas{
+    margin: 0 10px;
+}
+.frecuentes-tittle{
+    margin: 20px 15px;
+}
+.cont-contactanos{
+        .text-ayuda{
+            h2{
+                margin: 10px 15px
             }
-        }
-        }
-        label{
-        display: inline-block;
-        display: flex;
-        margin-bottom: 0;
-        align-items: center;
-        cursor: pointer;
-        &::after{
-            content: "+";
-            position: absolute;
-            right: 20px;
-            font-size: 2em;
-            color: rgba(0,0,0,0.1);
-            transition: transform 1s;
-        }
-        h2{
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            font-size: 1.25em;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-        h3{
-            position: relative;
-            font-weight: 500;
-            color: #fff9f9;
-        }
-        }
-        &:hover{
-        label{
-            &::after{
-                color: #333;
-            }
-        }
-        }
-        .content{
-        max-height: 0;
-        overflow: hidden;
-        transition: 1s;
             p{
-            position: relative;
-            padding: 10px 0;
-            color: #333;
+                margin: 10px 15px;
             }
         }
-    }
-    .cont-contactanos{
         p{
             font-size: 16px;
         }
         input{
             display: block;
-            margin: 15px 0;
+            margin: 15px 20px;
             height: 40px;
-            width: 17%;
+            width: 20%;
             padding-left: 10px;
             color: #000000;
             border: 1px solid  #d5a8a835;
@@ -636,11 +496,12 @@ header{
             width: 7%;
         }
         .cont-text-area{
+            margin-left: 20px;
             resize: none;
-            width: 17%;
+            width: 20%;
         }
-    }
 }
+
 
 //Inicio Sesion/Registro
 .cont-inicio-sesion{
@@ -843,19 +704,14 @@ footer{
 //responsive
 
 //responsive otras medidas
-@media screen and (max-width: 1000px){
-    .cont-header{
-        flex-direction: column;
-        nav{
-            padding: 10px 0;
-        }
-    }       
+@media screen and (max-width: 1000px){    
     .cont-cate{
             .cont_nav_categorias{
                 #icon_bars{
                     display: block;
                     font-size: 30px;
                     margin-left: 20px;
+                    margin-top: 10px;
                 }
                 #icon_bars:hover ~ ul{
                     left: 0;
@@ -868,7 +724,7 @@ footer{
                     width: 100%;
                     height: 40vh;
                     background-color: #000000;
-                    top: 180px;
+                    top: 110px;
                     left: -100%;
                     text-align: center;
                     transition: all 0.5s;
@@ -879,6 +735,7 @@ footer{
                         display: block;                
                         a{
                             font-size: 20px;
+                            left: 10px;
                         }
                         a:hover{
                             background: none;
@@ -887,14 +744,12 @@ footer{
                     }
                     .cont-sub-cate{
                         width: 100%;
-                        height: 35vh;
+                        height: 30vh;
+                        margin: 0 -15px;
                         background-color: #000000;
                     }
                     .cont-sub-cate:hover{
                         color: #4c1853c4;
-                    }
-                    .cate_menu{
-                        display: none;
                     }
                 }
             }
@@ -903,36 +758,15 @@ footer{
         .cont-img{
             display: flex;
             flex-direction: column;
-            a{
-                margin: 15px 0;
-                background: none;
-                border: none;
-            }
         }
     }
-    .cont-general-help{
-        margin: 10px 20px;
-        .cont{
-            .tab{
-                width: 100%;
-                margin-right: 5px;
-                h3{
-                    position: unset;
-                }
-                .content{
-                    p{
-                        position: unset;
-                    }
-                }
-            }
+    .cont-contactanos{
+        p{
+            font-size: 13px;
         }
-        .cont-contactanos{
-            p{
-                font-size: 13px;
-            }
-            input{
-                width: 200px;
-            }
+        input{
+            width: 200px;
+        }
             .cont-text-area{
                 width: 200px;
             }
@@ -940,7 +774,6 @@ footer{
                 width: 130px;
             }
         }
-    }
     .cont-carrito{
         h2{
             margin-left: inherit;

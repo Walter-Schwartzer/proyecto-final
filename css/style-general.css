@@ -36,46 +36,22 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 100%;
+  max-width: 100%;
+  width: 1920px;
   cursor: default;
 }
 
-header .cont-header {
-  display: flex;
-  justify-content: space-around;
-  min-height: 70px;
-  background: linear-gradient(30deg, #5C0270 50%, #48104F 50%);
-  align-items: center;
-  padding: 10px;
+.cont-carrusel img {
+  width: 300px;
 }
-header .cont-header .logo {
-  display: flex;
-  align-items: center;
-}
-header .cont-header .logo h1 {
-  cursor: default;
-}
-header .cont-header img {
-  width: 80px;
-}
-header .cont-header nav .nav-link {
-  color: #fff;
-  padding-right: 10px;
-}
-header .cont-header nav .nav-link:hover {
-  color: #E1B7FF;
-}
-header .cont-header nav .cont-a-nav:hover {
-  transform: scale(1);
-}
+
 header .cont-cate #icon_bars {
   display: none;
 }
 header .cont-cate .cont_nav_categorias {
   display: flex;
-  max-width: 1920px;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.4745098039);
+  height: 60px;
 }
 header .cont-cate .cont_nav_categorias .cont-ul > li {
   float: left;
@@ -88,6 +64,7 @@ header .cont-cate .cont_nav_categorias .cont-ul {
 }
 header .cont-cate .cont_nav_categorias .cont-ul a {
   color: #fff;
+  margin: 0 50px;
   text-decoration: none;
   padding: 15px 20px;
   display: block;
@@ -98,17 +75,26 @@ header .cont-cate .cont_nav_categorias .cont-ul a:hover {
 header .cont-cate .cont_nav_categorias .cont-ul ul {
   display: none;
   position: absolute;
-  min-width: 140px;
 }
 header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate {
   background-color: #000000;
   list-style-type: none;
   z-index: 10;
 }
-header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
-  margin: auto 30px;
+header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
+  margin-left: 15px;
+  text-align: center;
 }
 
+.cont-main .cont-product-inicio img {
+  width: 300px;
+  height: 300px;
+}
+.cont-main .cont-product-inicio .card {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
 .cont-main .cont-inicio {
   background: url(../img/fondo-inicio-1.jpg);
   background-position: center;
@@ -127,40 +113,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
   font-size: 3em;
   margin-top: 5%;
   background-color: rgba(0, 0, 0, 0.1843137255);
-}
-.cont-main .cont-img {
-  margin: 50px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.cont-main .cont-img h3 {
-  font-size: 1.3em;
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  margin: 25px 0;
-  border: none;
-}
-.cont-main .cont-img h3:hover {
-  color: #000000;
-}
-.cont-main .cont-img img {
-  width: 330px;
-  height: 350px;
-  align-items: center;
-  text-align: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.cont-main .cont-img a {
-  background-color: rgba(156, 150, 150, 0.7725490196);
-  border: solid 1px #fff;
-  border-radius: 5px;
-}
-.cont-main .cont-img a:hover {
-  transform: scale(1.1);
 }
 
 .cont-general {
@@ -475,113 +427,28 @@ header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
   color: #fff;
 }
 
-.cont-general-help {
-  margin: 15px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.cont-preguntas {
+  margin: 0 10px;
 }
-.cont-general-help h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+
+.frecuentes-tittle {
+  margin: 20px 15px;
 }
-.cont-general-help .tab {
-  position: relative;
-  padding: 0 20px 20px;
-  background-color: rgba(233, 154, 236, 0.6196078431);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 15px 0;
+
+.cont-contactanos .text-ayuda h2 {
+  margin: 10px 15px;
 }
-.cont-general-help .tab input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.cont-contactanos .text-ayuda p {
+  margin: 10px 15px;
 }
-.cont-general-help .tab input:checked ~ label::after {
-  content: "+";
-  color: rgb(57, 45, 226);
-  transform: rotate(135deg);
-  position: absolute;
-}
-.cont-general-help .tab input:checked ~ label h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 8em;
-  justify-content: flex-end;
-  padding: 20px;
-}
-.cont-general-help .tab input:checked ~ label h3 {
-  background: #fff;
-  padding: 2px 10px;
-  color: #333;
-  border-radius: 2px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-.cont-general-help .tab input:checked ~ .content {
-  max-height: 100vh;
-  transition: 1s;
-}
-.cont-general-help .tab input:checked ~ .content p {
-  color: #fffdfd;
-}
-.cont-general-help .tab label {
-  display: inline-block;
-  display: flex;
-  margin-bottom: 0;
-  align-items: center;
-  cursor: pointer;
-}
-.cont-general-help .tab label::after {
-  content: "+";
-  position: absolute;
-  right: 20px;
-  font-size: 2em;
-  color: rgba(0, 0, 0, 0.1);
-  transition: transform 1s;
-}
-.cont-general-help .tab label h2 {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1.25em;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-.cont-general-help .tab label h3 {
-  position: relative;
-  font-weight: 500;
-  color: #fff9f9;
-}
-.cont-general-help .tab:hover label::after {
-  color: #333;
-}
-.cont-general-help .tab .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: 1s;
-}
-.cont-general-help .tab .content p {
-  position: relative;
-  padding: 10px 0;
-  color: #333;
-}
-.cont-general-help .cont-contactanos p {
+.cont-contactanos p {
   font-size: 16px;
 }
-.cont-general-help .cont-contactanos input {
+.cont-contactanos input {
   display: block;
-  margin: 15px 0;
+  margin: 15px 20px;
   height: 40px;
-  width: 17%;
+  width: 20%;
   padding-left: 10px;
   color: #000000;
   border: 1px solid rgba(213, 168, 168, 0.2078431373);
@@ -589,14 +456,15 @@ header .cont-cate .cont_nav_categorias .cont-ul .menu_item {
   font-size: 1rem;
   outline: none;
 }
-.cont-general-help .cont-contactanos .cont-enviar {
+.cont-contactanos .cont-enviar {
   cursor: pointer;
   text-align: center;
   width: 7%;
 }
-.cont-general-help .cont-contactanos .cont-text-area {
+.cont-contactanos .cont-text-area {
+  margin-left: 20px;
   resize: none;
-  width: 17%;
+  width: 20%;
 }
 
 .cont-inicio-sesion {
@@ -796,16 +664,11 @@ footer .cont-copy {
 }
 
 @media screen and (max-width: 1000px) {
-  .cont-header {
-    flex-direction: column;
-  }
-  .cont-header nav {
-    padding: 10px 0;
-  }
   .cont-cate .cont_nav_categorias #icon_bars {
     display: block;
     font-size: 30px;
     margin-left: 20px;
+    margin-top: 10px;
   }
   .cont-cate .cont_nav_categorias #icon_bars:hover ~ ul {
     left: 0;
@@ -818,7 +681,7 @@ footer .cont-copy {
     width: 100%;
     height: 40vh;
     background-color: #000000;
-    top: 180px;
+    top: 110px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
@@ -831,6 +694,7 @@ footer .cont-copy {
   }
   .cont-cate .cont_nav_categorias .cont-ul li a {
     font-size: 20px;
+    left: 10px;
   }
   .cont-cate .cont_nav_categorias .cont-ul li a:hover {
     background: none;
@@ -838,47 +702,27 @@ footer .cont-copy {
   }
   .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate {
     width: 100%;
-    height: 35vh;
+    height: 30vh;
+    margin: 0 -15px;
     background-color: #000000;
   }
   .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate:hover {
     color: rgba(76, 24, 83, 0.768627451);
   }
-  .cont-cate .cont_nav_categorias .cont-ul .cate_menu {
-    display: none;
-  }
   .cont-main .cont-img {
     display: flex;
     flex-direction: column;
   }
-  .cont-main .cont-img a {
-    margin: 15px 0;
-    background: none;
-    border: none;
-  }
-  .cont-general-help {
-    margin: 10px 20px;
-  }
-  .cont-general-help .cont .tab {
-    width: 100%;
-    margin-right: 5px;
-  }
-  .cont-general-help .cont .tab h3 {
-    position: unset;
-  }
-  .cont-general-help .cont .tab .content p {
-    position: unset;
-  }
-  .cont-general-help .cont-contactanos p {
+  .cont-contactanos p {
     font-size: 13px;
   }
-  .cont-general-help .cont-contactanos input {
+  .cont-contactanos input {
     width: 200px;
   }
-  .cont-general-help .cont-contactanos .cont-text-area {
+  .cont-contactanos .cont-text-area {
     width: 200px;
   }
-  .cont-general-help .cont-contactanos .cont-enviar {
+  .cont-contactanos .cont-enviar {
     width: 130px;
   }
   .cont-carrito h2 {
