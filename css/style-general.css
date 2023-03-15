@@ -36,8 +36,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 100%;
-  width: 1920px;
   cursor: default;
 }
 
@@ -198,7 +196,7 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
 .cont-hospc .cont-ttsubtt .cont-hardware {
   background: url(../img/fondo-hard.jpg);
   background-repeat: no-repeat;
-  padding-block: 160px;
+  padding-block: 50px;
   background-size: cover;
   background-position: center;
 }
@@ -212,13 +210,13 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
 .cont-hospc .cont-ttsubtt .cont-soft {
   background: url(../img/fondo-soft.jpg);
   background-repeat: no-repeat;
-  padding-block: 160px;
+  padding-block: 70px;
   background-size: cover;
   background-position: center;
 }
 .cont-hospc .cont-ttsubtt .cont-ofer {
   background-color: #ffffff;
-  padding-block: 110px;
+  padding-block: 90px;
 }
 .cont-hospc .cont-ttsubtt .cont-ofer h2 {
   color: #000000;
@@ -226,37 +224,23 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
 .cont-hospc .cont-ttsubtt .cont-ofer p {
   color: #000000;
 }
-.cont-hospc .cont_product_general {
-  margin-top: 40px;
-  margin-left: 20px;
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.cont-hospc .cont_product_general .card {
+  width: 300px;
+  background: transparent;
+  border: none;
   text-align: center;
+  align-items: center;
 }
-.cont-hospc .cont_product_general .cont-hospc-product {
-  margin: 0 25px;
-  padding: 0 20px;
+.cont-hospc .cont_product_general a {
+  width: 100px;
 }
 .cont-hospc .cont_product_general img {
-  width: 430px;
-  margin: 60px 50px;
-  height: 430px;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(156, 150, 150, 0.6431372549);
-  border: solid 1px #fff;
-  border-radius: 5px;
+  height: 250px;
+  width: 250px;
 }
-.cont-hospc .cont_product_general p {
-  margin-top: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-}
-.cont-hospc .cont-hospc-product:hover {
+.cont-hospc .cont_product_general .card:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .cont-giftcard {
@@ -787,22 +771,6 @@ footer .cont-copy {
   }
   .cont-hospc .cont-ttsubtt p {
     font-size: 20px;
-  }
-  .cont-hospc .cont_product_general {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  .cont-hospc .cont_product_general img {
-    width: 300px;
-    height: 300px;
-  }
-  .cont-hospc .cont_product_general .cont-hospc-product {
-    margin-left: 45px;
-    padding-left: 0px;
-  }
-  .cont-hospc .cont_product_general .cont-hospc-product h3 {
-    font-size: 15px;
   }
   .cont-cuenta .cont-general-cuenta {
     width: 300px;
