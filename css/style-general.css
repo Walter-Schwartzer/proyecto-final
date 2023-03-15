@@ -518,6 +518,9 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   color: #fff;
   margin-top: 15px;
 }
+.cont-inicio-sesion .form-body .login-form button a {
+  color: #fff;
+}
 .cont-inicio-sesion .form-body .login-form .opciones {
   margin: 0;
   padding: 0;
