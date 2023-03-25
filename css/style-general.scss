@@ -246,14 +246,18 @@ header{
         }
         .cont-ofer{
             background-color: #ffffff;
-            height: 300px;
-            align-items: center;
-            text-align: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             justify-content: center;
+            height: 300px;
+            text-align: center;
             h2{
+                margin: 0;
                 color: #000000;
             }
             p{  
+                margin: 0;
                 color: #000000;
             }
         }
