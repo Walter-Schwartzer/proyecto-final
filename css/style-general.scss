@@ -333,64 +333,79 @@ header{
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             font-size: 18px;
             // grid-column: 1/3;
             grid-area: cuenta;
         }
         .cont-ayuda_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: ayuda;
         }
         .cont-pagos_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: pagos;
         }
         .cont-carrito_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: carrito;
         }
         .cont-deseados_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: deseados;
         }
         .cont-giftcard_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: giftcard;
         }
         .cont-mensajes_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: mensajes;
         }
         .cont-direccion_cuenta{
+            cursor: pointer;
             border: 1px solid #fff;
             font-size: 18px;
             background: #1D2B64;
             background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
             background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            border-radius: 5px;
             grid-area: direccion;
         }
     }

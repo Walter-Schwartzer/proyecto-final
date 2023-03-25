@@ -302,56 +302,71 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   border: 1px solid #fff;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   font-size: 18px;
   grid-area: cuenta;
 }
 .cont-cuenta .cont-cuenta-general .cont-ayuda_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: ayuda;
 }
 .cont-cuenta .cont-cuenta-general .cont-pagos_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: pagos;
 }
 .cont-cuenta .cont-cuenta-general .cont-carrito_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: carrito;
 }
 .cont-cuenta .cont-cuenta-general .cont-deseados_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: deseados;
 }
 .cont-cuenta .cont-cuenta-general .cont-giftcard_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: giftcard;
 }
 .cont-cuenta .cont-cuenta-general .cont-mensajes_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: mensajes;
 }
 .cont-cuenta .cont-cuenta-general .cont-direccion_cuenta {
+  cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  border-radius: 5px;
   grid-area: direccion;
 }
 
