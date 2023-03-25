@@ -110,7 +110,9 @@ header{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-block: 160px;  
+        justify-content: center;
+        height: 400px;
+        display: flex;
         text-align: center;
     }        
     h3{
@@ -121,8 +123,7 @@ header{
     }
     h2{
         font-size: 3em;
-        margin-top: 5%;
-        background-color: #0000002f;
+        margin-top: 200px;
     }
 }
 
@@ -196,13 +197,11 @@ header{
             font-size: 4rem;
             font-style: italic;
             color: #fff;
-            text-align: center;
-            background-color: #00000010;
+            margin-top: 170px;
         }
         p{
             font-size: 2.5rem;
             color: #fff;
-            background-color: #00000010;
             text-align: center;
         }
         .cont-cel{
@@ -210,36 +209,51 @@ header{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-block: 160px;            
+        justify-content: center;
+        height: 300px;
+        display: flex;
+        text-align: center;         
         }
         .cont-hardware{
             background: url(../img/fondo-hard.jpg);
-            background-repeat: no-repeat;
-            padding-block: 50px;
-            background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            height: 300px;
+            display: flex;
+            text-align: center;
         }
         .cont-peri{
             background: url(../img/fondo-perifericos.jpg);
-            background-repeat: no-repeat;
-            padding-block: 160px;
-            background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            height: 300px;
+            display: flex;
+            text-align: center;
         }
         .cont-soft{
             background: url(../img/fondo-soft.jpg );
-            background-repeat: no-repeat;
-            padding-block: 70px;
-            background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            height: 300px;
+            display: flex;
+            text-align: center;
         }
         .cont-ofer{
             background-color: #ffffff;
-            padding-block: 90px;
+            height: 300px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
             h2{
                 color: #000000;
             }
-            p{
+            p{  
                 color: #000000;
             }
         }
@@ -284,51 +298,102 @@ header{
 
 //Cuenta
 .cont-cuenta{
-    .cont-tittle-cuenta{
-        h2{ 
-            font-size: 2.5rem;
-            margin: 25px 25px;
+    a{
+        color: #fff;
+        font-size: 24px;
+        &:hover{
+        color: #680c72;
         }
     }
-    .cont-general-cuenta{
-        cursor: default;
-        width: 400px;
-        border: 3px solid #000000;
-        margin-left: 25px;
-        background-color: #ffffffcb;
-        border-radius: 10px;
-        .cont-datos-cuenta{
-            margin-top: 20px;
-            h3{
-                font-size: 2rem;
-                color: #000000;
-            }
-            p{
-                font-size: 25px;
-                color: #000000;
-                span{
-                    font-size: 20px;
-                    color: #933b9c;
-                }
-            }
-        }   
-        .cont-datos-personales{
-            margin: 20px 0;
-            h3{
-                font-size: 2rem;
-                color: #000000;
-            }
-            p{
-                font-size: 25px;
-                color: #000000;
-                span{
-                    font-size: 20px;
-                    color: #933b9c;
-                }
-            }
-        }     
+    h1{
+        margin: 15px;
     }
-
+    p{
+        font-size: 22px;
+        color: #000000;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .cont-cuenta-general{
+        display: grid;
+        // grid-template-columns: 50% 50%;
+        grid-template-areas:    "cuenta cuenta"
+                                "direccion carrito"
+                                "giftcard pagos"
+                                "mensajes deseados"
+                                "ayuda ayuda";
+        gap: 10px;
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        .cont-cuenta_cuenta{
+            cursor: pointer;
+            border: 1px solid #fff;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            font-size: 18px;
+            // grid-column: 1/3;
+            grid-area: cuenta;
+        }
+        .cont-ayuda_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: ayuda;
+        }
+        .cont-pagos_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: pagos;
+        }
+        .cont-carrito_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: carrito;
+        }
+        .cont-deseados_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: deseados;
+        }
+        .cont-giftcard_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: giftcard;
+        }
+        .cont-mensajes_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: mensajes;
+        }
+        .cont-direccion_cuenta{
+            border: 1px solid #fff;
+            font-size: 18px;
+            background: #1D2B64;
+            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+            background: linear-gradient(to right, #F8CDDA, #1D2B64);
+            grid-area: direccion;
+        }
+    }
 }
 
 //Trabaja con Nosotros
@@ -692,9 +757,41 @@ footer{
     }
 }
 
+// estilos grid bootstrap
+.titulo-btp{
+    .titulo-vs{
+        font-size: 3.5em;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
+.cont-grid-boostrap{
+    align-items: center;
+    margin-bottom: 50px;
+    .subtitulo-btn{
+        text-align: center;
+    }
+    a{
+        text-align: center;
+    }
+    img{
+        width: 500px;
+    }
+}
+
 //responsive
 
 //responsive otras medidas
+
+@media screen and (max-width:1200px){
+    .cont-cuenta{
+        .cont-cuenta-general{
+            width: 70%;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px){    
     .cont-cate{
             .cont_nav_categorias{
@@ -833,7 +930,6 @@ footer{
             margin: 0;
             h2{
                 margin-top: 10px;
-                font-size: 25px;
             }
             p{
                 font-size: 20px;
@@ -841,30 +937,76 @@ footer{
         }
     }
     .cont-cuenta{
-        .cont-general-cuenta{
-            width: 300px;
-            .cont-datos-cuenta{
-                h3{
-                    font-size: 1.4em;
-                }
-                p{
-                    font-size: 1em;
-                    span{
-                        font-size: 1em;
-                    }
-                }
+        .cont-cuenta-general{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 720px){
+    .cont-grid-boostrap{
+        font-size: 12px;
+        .img-btn{
+            width: 200px;
+        }
+        img{
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .cont-cuenta{
+        a{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .cont-cuenta-general{
+            grid-template-columns: 50% 50%;
+            grid-template-areas:"cuenta direccion"
+                                "carrito giftcard"
+                                "pagos mensajes"
+                                "deseados ayuda";
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .cont-main{
+        .cont-inicio{
+            h2{
+                margin-top: 100px;
             }
-            .cont-datos-personales{
-                h3{
-                    font-size: 1.4em;
-                }
-                p{
-                    font-size: 1em;
-                    span{
-                        font-size: 1em;
-                    }
-                }
+        }
+    }
+    .cont-grid-boostrap{
+        font-size: 12px;
+        a{
+            img{
+                width: 150px;
             }
+        }
+        img{
+            width: 170px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .cont-cuenta{
+        .cont-cuenta-general{
+            grid-template-columns: auto;
+            grid-template-areas:"cuenta"
+                                "direccion"
+                                "carrito"
+                                "giftcard"
+                                "pagos"
+                                "mensajes"
+                                "deseados"
+                                "ayuda";
         }
     }
 }
