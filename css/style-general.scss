@@ -286,17 +286,36 @@ header{
 
 //giftcards
 .cont-giftcard{
-    margin-left: 25px;
-    margin-top: 20px;
-    padding: 0px 10px;
     h2{
-        font-size: 1.8rem;
-        margin-bottom: 20px;
+        margin-top: 15px;
     }
-    p{
-        font-size: 15px;
-        margin-top: 20px;
-        padding: 5px 0;
+    .a-giftcard{
+        text-align: center;
+        margin: 5px;
+        a{
+            color: #fff;
+            text-decoration: revert;
+            &:hover{
+                background-color: #6f019b;
+                color: #000000;
+            }
+        }
+    }
+}
+.cont-giftcard-compra{
+    .card-body-gift{
+        height: 400px;
+        width: 18rem;
+        img{
+            width: 260px;
+            height: 190px;
+        }
+        h5{
+            color: #000000;
+        }
+        p{
+            color: #000000;
+        }
     }
 }
 
@@ -988,6 +1007,14 @@ footer{
                                 "carrito giftcard"
                                 "pagos mensajes"
                                 "deseados ayuda";
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .cont-giftcard-compra{
+        .card-body-gift{
+            margin-left: 30px;
         }
     }
 }
