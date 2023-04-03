@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$bg-color-secundario: #fff;
+$bg-color-terciario: #000000;
+$bg-color-azul: #1D2B64;
+$bg-color-variacion: #F8CDDA;
+
 *{
     font-family: 'PT Sans', sans-serif;
     padding: 0px;
@@ -27,23 +33,17 @@ a{
 
 // BODY´S
 .body-inicio-registro{
-    color: #fff;
+    color: $bg-color-secundario;
     width: 100%;
 }
 
 .body-general{
     background: url(../img/fondo3.jpg);
-    color: #fff;
+    color: $bg-color-secundario;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     cursor: default;
-}
-
-.cont-carrusel{
-    img{
-        width: 300px;
-    }
 }
 
 //estilos del header
@@ -65,7 +65,7 @@ header{
             .cont-ul{
             list-style-type: none;
                 a{
-                    color: #fff;
+                    color: $bg-color-secundario;
                     margin: 0 50px;
                     text-decoration: none;
                     padding: 15px 20px;
@@ -79,7 +79,7 @@ header{
                 position: absolute;
                 }
                 .cont-sub-cate{
-                    background-color: #000000;
+                    background-color: $bg-color-terciario;
                     list-style-type: none;
                     z-index: 10;
                     a{
@@ -119,11 +119,44 @@ header{
         margin-top: 70px;
         font-size: 2.5em;
         text-align: center;
-        border-bottom: #000000 1px solid;   
+        border-bottom: $bg-color-terciario 1px solid;   
     }
     h2{
         font-size: 3em;
         margin-top: 200px;
+    }
+    .cont-img{
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        h3{
+            font-size: 1.3em;
+            color: $bg-color-secundario;
+            text-align: center;
+            align-items: center;
+            margin: 25px 0;
+            border: none;
+        }
+        h3:hover{
+            color: $bg-color-terciario;
+        }
+        img{
+            width: 330px;
+            height: 350px;
+            align-items: center;
+            text-align: center;
+            object-fit: cover;
+        }
+        a{
+            background-color: #9c9696c5;
+            border: solid 1px $bg-color-secundario;
+            border-radius: 5px;
+        }    
+        a:hover{
+        transform: scale(1.1);
+        }
     }
 }
 
@@ -155,8 +188,8 @@ header{
                 height: 50px;
                 margin-bottom: 10px;
                 background-color: #b2639585;
-                color: #000000;
-                border: 1px solid #000000; 
+                color: $bg-color-terciario;
+                border: 1px solid $bg-color-terciario; 
                 border-radius: 5px;
                 font-size: 1.2em;
                 cursor: pointer;
@@ -191,74 +224,57 @@ header{
 }
 
 //product and offers
+
+@mixin categorias ($direccion:column){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    height: 300px;
+    display: flex;
+    flex-direction: $direccion;
+    text-align: center;  
+}
+
 .cont-hospc{
     .cont-ttsubtt{ 
         h2{
             font-size: 4rem;
             font-style: italic;
-            color: #fff;
+            color: $bg-color-secundario;
             margin-top: 170px;
         }
         p{
             font-size: 2.5rem;
-            color: #fff;
+            color: $bg-color-secundario;
             text-align: center;
         }
         .cont-cel{
-        background: url(../img/fondo-cel-copia.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-content: center;
-        height: 300px;
-        display: flex;
-        text-align: center;         
+            background: url(../img/fondo-cel-copia.jpg);
+            @include categorias;
         }
         .cont-hardware{
             background: url(../img/fondo-hard.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            justify-content: center;
-            height: 300px;
-            display: flex;
-            text-align: center;
+            @include categorias;
         }
         .cont-peri{
             background: url(../img/fondo-perifericos.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            justify-content: center;
-            height: 300px;
-            display: flex;
-            text-align: center;
+            @include categorias;
         }
         .cont-soft{
             background: url(../img/fondo-soft.jpg );
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            justify-content: center;
-            height: 300px;
-            display: flex;
-            text-align: center;
+            @include categorias;
         }
         .cont-ofer{
-            background-color: #ffffff;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            justify-content: center;
-            height: 300px;
-            text-align: center;
+            background-color: $bg-color-secundario;
+            @include categorias (column);
             h2{
                 margin: 0;
-                color: #000000;
+                color: $bg-color-terciario;
             }
             p{  
                 margin: 0;
-                color: #000000;
+                color: $bg-color-terciario;
             }
         }
     }
@@ -293,11 +309,11 @@ header{
         text-align: center;
         margin: 5px;
         a{
-            color: #fff;
+            color: $bg-color-secundario;
             text-decoration: revert;
             &:hover{
                 background-color: #6f019b;
-                color: #000000;
+                color: $bg-color-terciario;
             }
         }
     }
@@ -311,18 +327,31 @@ header{
             height: 190px;
         }
         h5{
-            color: #000000;
+            color: $bg-color-terciario;
         }
         p{
-            color: #000000;
+            color: $bg-color-terciario;
         }
     }
 }
 
 //Cuenta
+
+@mixin estilo-cuenta ($cuenta: cuenta, $ayuda: ayuda, $pagos: pagos, $carrito: carrito, $deseado: deseados, $giftcard: giftcard, $mensajes: mensajes, $direccion: direccion){
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid $bg-color-secundario;
+    font-size: 18px;
+    background: $bg-color-azul;
+    background: -webkit-linear-gradient(to right, $bg-color-variacion, $bg-color-azul);
+    background: linear-gradient(to right, $bg-color-variacion, $bg-color-azul);
+    border-radius: 5px;
+    grid-area: $cuenta, $area, $pagos, $carrito, $deseado, $giftcard, $mensajes, $direccion;
+}
+
 .cont-cuenta{
     a{
-        color: #fff;
+        color: $bg-color-secundario;
         font-size: 24px;
         &:hover{
         color: #680c72;
@@ -333,14 +362,13 @@ header{
     }
     p{
         font-size: 22px;
-        color: #000000;
+        color: $bg-color-terciario;
         &:hover{
-            color: #fff;
+            color: $bg-color-secundario;
         }
     }
     .cont-cuenta-general{
         display: grid;
-        // grid-template-columns: 50% 50%;
         grid-template-areas:    "cuenta cuenta"
                                 "direccion carrito"
                                 "giftcard pagos"
@@ -351,85 +379,28 @@ header{
         margin: 0 auto;
         padding: 20px;
         .cont-cuenta_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            font-size: 18px;
-            // grid-column: 1/3;
-            grid-area: cuenta;
+            @include estilo-cuenta($cuenta);
         }
         .cont-ayuda_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: ayuda;
+            @include estilo-cuenta($ayuda);
         }
         .cont-pagos_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: pagos;
+            @include estilo-cuenta($pagos);
         }
         .cont-carrito_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: carrito;
+            @include estilo-cuenta($carrito);
         }
         .cont-deseados_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: deseados;
+            @include estilo-cuenta($deseado);
         }
         .cont-giftcard_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: giftcard;
+            @include estilo-cuenta($giftcard);
         }
         .cont-mensajes_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: mensajes;
+            @include estilo-cuenta($mensajes);
         }
         .cont-direccion_cuenta{
-            cursor: pointer;
-            border: 1px solid #fff;
-            font-size: 18px;
-            background: #1D2B64;
-            background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
-            background: linear-gradient(to right, #F8CDDA, #1D2B64);
-            border-radius: 5px;
-            grid-area: direccion;
+            @include estilo-cuenta($direccion);
         }
     }
 }
@@ -462,7 +433,7 @@ header{
         .cont-file{
             border: none;
             margin-left: -10px;
-            color: #fff;
+            color: $bg-color-secundario;
         }
         .cont-label-nosotros{
             display: flex;
@@ -481,7 +452,7 @@ header{
             height: 40px;
             width: 75%;
             padding-left: 10px;
-            color: #000000;
+            color: $bg-color-terciario;
             border: 1px solid  #d5a8a835;
             border-radius: 2px;
             font-size: 1rem;
@@ -507,7 +478,7 @@ header{
         cursor: pointer;
         img{
             width: 10%;
-            border: solid 1px #000000;
+            border: solid 1px $bg-color-terciario;
             background-color: #b8a9a928;
             border-radius: 10px;
             margin-top: 10px;
@@ -536,14 +507,14 @@ header{
             position: absolute;
             left: 120px;
             cursor: pointer;
-            background: #fff;
+            background: $bg-color-secundario;
             border-radius: 10px;
             font-size: 15px;
             font-weight: 800;
         }
         button:hover{
             background: #848080c6;
-            color: #fff;
+            color: $bg-color-secundario;
         }
     }
 }
@@ -573,7 +544,7 @@ header{
             height: 40px;
             width: 20%;
             padding-left: 10px;
-            color: #000000;
+            color: $bg-color-terciario;
             border: 1px solid  #d5a8a835;
             border-radius: 3px;
             font-size: 1rem;
@@ -599,7 +570,7 @@ header{
     justify-content: center;
     text-align: justify;
     height: 97vh;
-    color: #fff;
+    color: $bg-color-secundario;
     background:linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
     .login-form{
         .cont-terminos{
@@ -638,7 +609,7 @@ header{
         border-radius: 5px;
         margin: 15px 0;
         background-color: #ffffff21;
-        border: 1px solid #fff;
+        border: 1px solid $bg-color-secundario;
         .cont_back{
             text-align: center;
             margin-bottom: 8px;
@@ -657,13 +628,13 @@ header{
         text-align: center;
         font-size: 1.5rem;
         font-weight: 600;
-        color: #fff;
+        color: $bg-color-secundario;
         margin-top: 15px;
         }
         .login-form{
             button{
                 a{
-                    color: #fff;
+                    color: $bg-color-secundario;
                 }
             }
             .opciones{
@@ -688,8 +659,8 @@ header{
             margin-bottom: 25px;
             width: 75%;
             padding-left: 10px;
-            color: #fff;
-            border: 1px solid  #fff;
+            color: $bg-color-secundario;
+            border: 1px solid  $bg-color-secundario;
             border-radius: 2px;
             background-color: transparent;
             border-top-left-radius: 10px;
@@ -761,7 +732,7 @@ footer{
             align-items: flex-start;
             h3{
                 margin-bottom: 30px;
-                color: #fff;
+                color: $bg-color-secundario;
                 font-weight: 700;
             }
             a{
@@ -778,13 +749,12 @@ footer{
         }
     }
     .cont-copy{
-        border-top: 0.1px solid #fff;
+        border-top: 0.1px solid $bg-color-secundario;
         margin-top: 10px;
     }
 }
 .footer-inicio-registro{
     padding: 0;
-    
     .cont-copy-registro{
         margin: auto;
         text-align: center;
@@ -807,6 +777,9 @@ footer{
 .cont-grid-boostrap{
     align-items: center;
     margin-bottom: 50px;
+    .cont-teclado{
+        text-align: center;
+    }
     .subtitulo-btn{
         text-align: center;
     }
@@ -849,7 +822,7 @@ footer{
                     position: absolute;
                     width: 100%;
                     height: 40vh;
-                    background-color: #000000;
+                    background-color: $bg-color-terciario;
                     top: 110px;
                     left: -100%;
                     text-align: center;
@@ -872,7 +845,7 @@ footer{
                         width: 100%;
                         height: 30vh;
                         margin: 0 -15px;
-                        background-color: #000000;
+                        background-color: $bg-color-terciario;
                     }
                     .cont-sub-cate:hover{
                         color: #4c1853c4;
@@ -884,6 +857,11 @@ footer{
         .cont-img{
             display: flex;
             flex-direction: column;
+            a{
+                margin: 15px 0;
+                background: none;
+                border: none;
+            }
         }
     }
     .cont-contactanos{
@@ -979,16 +957,19 @@ footer{
             width: 100%;
         }
     }
+    .cont-grid-boostrap{
+        img{
+            width: 350px;
+            height: 350px;
+        }
+    }
 }
 
 @media screen and (max-width: 720px){
     .cont-grid-boostrap{
-        font-size: 12px;
-        .img-btn{
-            width: 200px;
-        }
         img{
             width: 200px;
+            height: 200px;
         }
     }
 }
@@ -1029,14 +1010,10 @@ footer{
         }
     }
     .cont-grid-boostrap{
-        font-size: 12px;
         a{
             img{
                 width: 150px;
             }
-        }
-        img{
-            width: 170px;
         }
     }
 }

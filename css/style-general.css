@@ -39,10 +39,6 @@ a {
   cursor: default;
 }
 
-.cont-carrusel img {
-  width: 300px;
-}
-
 header .cont-cate #icon_bars {
   display: none;
 }
@@ -112,6 +108,40 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
 .cont-main h2 {
   font-size: 3em;
   margin-top: 200px;
+}
+.cont-main .cont-img {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont-main .cont-img h3 {
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  margin: 25px 0;
+  border: none;
+}
+.cont-main .cont-img h3:hover {
+  color: #000000;
+}
+.cont-main .cont-img img {
+  width: 330px;
+  height: 350px;
+  align-items: center;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cont-main .cont-img a {
+  background-color: rgba(156, 150, 150, 0.7725490196);
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+.cont-main .cont-img a:hover {
+  transform: scale(1.1);
 }
 
 .cont-general {
@@ -193,6 +223,7 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   justify-content: center;
   height: 300px;
   display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .cont-hospc .cont-ttsubtt .cont-hardware {
@@ -203,6 +234,7 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   justify-content: center;
   height: 300px;
   display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .cont-hospc .cont-ttsubtt .cont-peri {
@@ -213,6 +245,7 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   justify-content: center;
   height: 300px;
   display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .cont-hospc .cont-ttsubtt .cont-soft {
@@ -223,15 +256,18 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   justify-content: center;
   height: 300px;
   display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .cont-hospc .cont-ttsubtt .cont-ofer {
-  background-color: #ffffff;
+  background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   height: 300px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .cont-hospc .cont-ttsubtt .cont-ofer h2 {
@@ -319,75 +355,91 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   padding: 20px;
 }
 .cont-cuenta .cont-cuenta-general .cont-cuenta_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
+  font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  font-size: 18px;
+  grid-area: cuenta;
   grid-area: cuenta;
 }
 .cont-cuenta .cont-cuenta-general .cont-ayuda_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: ayuda;
 }
 .cont-cuenta .cont-cuenta-general .cont-pagos_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: pagos;
 }
 .cont-cuenta .cont-cuenta-general .cont-carrito_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: carrito;
 }
 .cont-cuenta .cont-cuenta-general .cont-deseados_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: deseados;
 }
 .cont-cuenta .cont-cuenta-general .cont-giftcard_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: giftcard;
 }
 .cont-cuenta .cont-cuenta-general .cont-mensajes_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: mensajes;
 }
 .cont-cuenta .cont-cuenta-general .cont-direccion_cuenta {
+  padding: 5px;
   cursor: pointer;
   border: 1px solid #fff;
   font-size: 18px;
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
+  grid-area: cuenta;
   grid-area: direccion;
 }
 
@@ -751,6 +803,9 @@ footer .cont-copy {
   align-items: center;
   margin-bottom: 50px;
 }
+.cont-grid-boostrap .cont-teclado {
+  text-align: center;
+}
 .cont-grid-boostrap .subtitulo-btn {
   text-align: center;
 }
@@ -815,6 +870,11 @@ footer .cont-copy {
   .cont-main .cont-img {
     display: flex;
     flex-direction: column;
+  }
+  .cont-main .cont-img a {
+    margin: 15px 0;
+    background: none;
+    border: none;
   }
   .cont-contactanos p {
     font-size: 13px;
@@ -893,16 +953,15 @@ footer .cont-copy {
   .cont-cuenta .cont-cuenta-general {
     width: 100%;
   }
+  .cont-grid-boostrap img {
+    width: 350px;
+    height: 350px;
+  }
 }
 @media screen and (max-width: 720px) {
-  .cont-grid-boostrap {
-    font-size: 12px;
-  }
-  .cont-grid-boostrap .img-btn {
-    width: 200px;
-  }
   .cont-grid-boostrap img {
     width: 200px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -926,14 +985,8 @@ footer .cont-copy {
   .cont-main .cont-inicio h2 {
     margin-top: 100px;
   }
-  .cont-grid-boostrap {
-    font-size: 12px;
-  }
   .cont-grid-boostrap a img {
     width: 150px;
-  }
-  .cont-grid-boostrap img {
-    width: 170px;
   }
 }
 @media screen and (max-width: 450px) {

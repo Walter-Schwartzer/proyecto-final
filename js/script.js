@@ -10,3 +10,8 @@
 // let nombre = prompt ("decime tu nombre");
 
 // alert ("bienvenido " + nombre +  " a GamingEX")
+
+
+// const input = document.querySelector(".input-contraseña")
+
+// input.minlength = "8" ;
