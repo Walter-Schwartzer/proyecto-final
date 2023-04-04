@@ -99,7 +99,7 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   display: flex;
   text-align: center;
 }
-.cont-main h3 {
+.cont-main h4 {
   margin-top: 70px;
   font-size: 2.5em;
   text-align: center;
@@ -109,39 +109,84 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   font-size: 3em;
   margin-top: 200px;
 }
-.cont-main .cont-img {
-  margin: 50px 0;
+.cont-main .cont-article {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
 }
-.cont-main .cont-img h3 {
-  font-size: 1.3em;
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  margin: 25px 0;
-  border: none;
-}
-.cont-main .cont-img h3:hover {
-  color: #000000;
-}
-.cont-main .cont-img img {
-  width: 330px;
+.cont-main .cont-article .card {
+  position: relative;
+  width: 300px;
+  margin: 20px;
   height: 350px;
-  align-items: center;
-  text-align: center;
+  background: rgb(71, 16, 107);
+}
+.cont-main .cont-article .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.cont-main .cont-article .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.cont-main .cont-article .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cont-main .cont-article .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000000;
+}
+.cont-main .cont-article .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cont-main .cont-img a {
-  background-color: rgba(156, 150, 150, 0.7725490196);
-  border: solid 1px #fff;
-  border-radius: 5px;
+.cont-main .cont-article .card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
-.cont-main .cont-img a:hover {
-  transform: scale(1.1);
+.cont-main .cont-article .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(5, 35, 54);
+  box-shadow: 0 5px 10px #000000;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.cont-main .cont-article .card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.cont-main .cont-article .card .back p {
+  letter-spacing: 1px;
+}
+.cont-main .cont-article .card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+.cont-main .cont-article .card .back .link a {
+  color: #f3f3f3;
+}
+.cont-main .cont-article .card .back .link a:hover {
+  color: #2498db;
 }
 
 .cont-general {
@@ -363,7 +408,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
   grid-area: cuenta;
-  grid-area: cuenta;
 }
 .cont-cuenta .cont-cuenta-general .cont-ayuda_cuenta {
   padding: 5px;
@@ -373,7 +417,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: ayuda;
 }
 .cont-cuenta .cont-cuenta-general .cont-pagos_cuenta {
@@ -384,7 +427,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: pagos;
 }
 .cont-cuenta .cont-cuenta-general .cont-carrito_cuenta {
@@ -395,7 +437,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: carrito;
 }
 .cont-cuenta .cont-cuenta-general .cont-deseados_cuenta {
@@ -406,7 +447,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: deseados;
 }
 .cont-cuenta .cont-cuenta-general .cont-giftcard_cuenta {
@@ -417,7 +457,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: giftcard;
 }
 .cont-cuenta .cont-cuenta-general .cont-mensajes_cuenta {
@@ -428,7 +467,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: mensajes;
 }
 .cont-cuenta .cont-cuenta-general .cont-direccion_cuenta {
@@ -439,7 +477,6 @@ header .cont-cate .cont_nav_categorias .cont-ul .cont-sub-cate a {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
   border-radius: 5px;
-  grid-area: cuenta;
   grid-area: direccion;
 }
 
