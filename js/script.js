@@ -15,3 +15,15 @@
 // const input = document.querySelector(".input-contraseña")
 
 // input.minlength = "8" ;
+
+
+const button = document.querySelector(".button");
+
+button.addEventListener("click", ()=>{
+    confirm("Desea confirmar la compra?")
+    if (confirm = true){
+        alert("Muchas gracias por tu compra!");
+    } else {
+        alert("Compra cancelada");
+    }
+});
