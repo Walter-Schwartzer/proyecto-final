@@ -1,0 +1,12 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "Hola Martin como estas? Espero que muy bien!\r \tTe queria adjuntar tambien los links de las paginas subidas a la web, asi las miras como quedan.\r \t\tUna es con css nativo y el otro con Bootstrap:\r \t\t\thttps://gamingexbtp.netlify.app\r \t\t\thttps://gamingex.netlify.app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Walter Schwartzer",
+  "license": "ISC"
+}
