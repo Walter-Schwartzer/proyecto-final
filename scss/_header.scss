@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$bg-color-secundario: #fff;
+$bg-color-terciario: #000000;
+$bg-color-azul: #1D2B64;
+$bg-color-variacion: #F8CDDA;
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ae00ff;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #bd00ec;
+}
+
+a{
+    color: rgb(203, 167, 167);
+    list-style-type: none;
+    text-decoration: none;
+    }
+
+// BODY´S
+.body-inicio-registro{
+    color: $bg-color-secundario;
+    width: 100%;
+}
+
+.body-general{
+    background: url(../img/fondo3.jpg);
+    color: $bg-color-secundario;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: default;
+}
+
+//estilos del header
+header{
+    .cont-cate{
+        #icon_bars{
+            display: none;
+        }
+        .cont_nav_categorias{
+            display: flex; 
+            background-color: #00000079;
+            height: 60px;
+            .cont-ul > li{
+                float: left;
+            }
+            li:hover > ul{
+                display: block;
+            }
+            .cont-ul{
+            list-style-type: none;
+                a{
+                    color: $bg-color-secundario;
+                    margin: 0 50px;
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    display: block;
+                }
+                a:hover{
+                    background-color: #434343b8;
+                }
+                ul{
+                display: none;
+                position: absolute;
+                }
+                .cont-sub-cate{
+                    background-color: $bg-color-terciario;
+                    list-style-type: none;
+                    z-index: 10;
+                    a{
+                        margin-left: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+        }  
+    }  
+}

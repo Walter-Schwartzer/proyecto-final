@@ -38,6 +38,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../pages/cuenta.html">Mi Cuenta</a></li>
                                 <li><a class="dropdown-item" href="../pages/carrito.html">Carrito</a></li>
+                                <li><a class="dropdown-item" href="../pages/giftcard.html">GiftCard</a></li> 
                                 <li><a class="dropdown-item" href="#ayuda">Ayuda</a></li>
                                 <li><a class="dropdown-item" href="../pages/nosotros.html">Nosotros</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -60,18 +61,17 @@
                             <li class="menu_item"><a href="../pages/software.html">Software</a></li>
                         </ul>
                     </li>
-                    <li class="menu_item"><a href="../pages/ofertas.html">Ofertas</a></li>
-                    <li class="menu_item"><a href="../pages/giftcard.html">GiftCard</a></li> 
-                    <li class="menu_item"><a href="../pages/cual-es-mejor.html">Cual es mejor?</a></li>      
+                    <li class="menu_item"><a href="../pages/ofertas.html">Ofertas</a></li>  
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="cont-general-nosotros">
-            <div class="cont-info-nosotros">
-                <h2>Sobre Nosotros</h2>
-                <p>La empresa de tecnología líder en comercio electrónico y soluciones fintech de América Latina. Nuestro propósito es democratizar el comercio y los servicios financieros para transformar la vida de millones de personas en la región.
+        <div class="container cont-info-emp">
+            <h2>Sobre Nosotros</h2>
+            <div class="row">
+                <p class="col-12 col-xl-6">
+                    La empresa de tecnología líder en comercio electrónico y soluciones fintech de América Latina. Nuestro propósito es democratizar el comercio y los servicios financieros para transformar la vida de millones de personas en la región.
                     <br>
                     Desarrollamos productos tecnológicos que permiten a millones de usuarios comprar, y pagar a través de Internet de forma fácil, segura y eficiente.
                     <br>
@@ -79,22 +79,25 @@
                     <br>
                     Somos conscientes de nuestro rol social y económico cada vez más relevante. Compartimos nuestras acciones y noticias corporativas.
                 </p>
+                <img src="../img/empresa-foto.jpg" alt="Empresa-GamingEx" class="col-12 col-xl-6">
             </div>
-            <div class="cont-trabaja-nosotros">
-                <h3>Trabaja con Nosotros</h3>
-                <h4>Dejanos tu CV</h4>
-                <form action="" method="post">
-                    <input type="text" id="name" name="user_name" placeholder="Ingrese su Nombre" required>
-                    <input type="text" id="surname" name="user_surname" placeholder="Ingrese su Apellido" required>
-                    <input type="email" name="mail" id="user_email" placeholder="Ingrese su Email" required >
-                    <input type="tel" name="number" id="user_number" placeholder="Numero de Telefono" required >
-                    <input class="cont-file" type="file" name="file" id="user_file" required>
-                    <div class="cont-label-nosotros">
-                            <input type="checkbox" name="acepto" value="si" required>
-                            <p>Acepto terminos y condiciones</p>
-                    </div>
-                    <input class="cont-enviar" type="submit">
-                </form>
+            <div class="cont-general-nosotros">
+                <div class="cont-trabaja-nosotros">
+                    <h3>Trabaja con Nosotros</h3>
+                    <h4>Dejanos tu CV</h4>
+                    <form action="" method="post">
+                        <input type="text" id="name" name="user_name" placeholder="Ingrese su Nombre" required>
+                        <input type="text" id="surname" name="user_surname" placeholder="Ingrese su Apellido" required>
+                        <input type="email" name="mail" id="user_email" placeholder="Ingrese su Email" required >
+                        <input type="tel" name="number" id="user_number" placeholder="Numero de Telefono" required >
+                        <input class="cont-file" type="file" name="file" id="user_file" required>
+                        <div class="cont-label-nosotros">
+                                <input type="checkbox" name="acepto" value="si" required>
+                                <p>Acepto terminos y condiciones</p>
+                        </div>
+                        <input class="cont-enviar" type="submit">
+                    </form>
+                </div>
             </div>
         </div>
     </main>
