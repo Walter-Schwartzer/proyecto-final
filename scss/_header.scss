@@ -46,48 +46,22 @@ a{
     cursor: default;
 }
 
-//estilos del header
-header{
-    .cont-cate{
-        #icon_bars{
-            display: none;
+
+.cont-cate{
+    .cont-ul{    
+        list-style-type: none;
+        display: flex;
+        font-size: 1.5em;
+        justify-content: space-evenly;
+        margin: 10px 0;
+        li{
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.63);
+            }    
+            a{
+                color: white;              
+            }
+
         }
-        .cont_nav_categorias{
-            display: flex; 
-            background-color: #00000079;
-            height: 60px;
-            .cont-ul > li{
-                float: left;
-            }
-            li:hover > ul{
-                display: block;
-            }
-            .cont-ul{
-            list-style-type: none;
-                a{
-                    color: $bg-color-secundario;
-                    margin: 0 50px;
-                    text-decoration: none;
-                    padding: 15px 20px;
-                    display: block;
-                }
-                a:hover{
-                    background-color: #434343b8;
-                }
-                ul{
-                display: none;
-                position: absolute;
-                }
-                .cont-sub-cate{
-                    background-color: $bg-color-terciario;
-                    list-style-type: none;
-                    z-index: 10;
-                    a{
-                        margin-left: 15px;
-                        text-align: center;
-                    }
-                }
-            }
-        }  
-    }  
+    }
 }

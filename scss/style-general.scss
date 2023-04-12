@@ -772,55 +772,6 @@
 }
 
 @media screen and (max-width: 1000px){    
-    .cont-cate{
-            .cont_nav_categorias{
-                #icon_bars{
-                    display: block;
-                    font-size: 30px;
-                    margin-left: 20px;
-                    margin-top: 10px;
-                }
-                #icon_bars:hover ~ ul{
-                    left: 0;
-                }
-                .cont-ul:hover{
-                    left: 0
-                }
-                .cont-ul{
-                    position: absolute;
-                    width: 100%;
-                    height: 40vh;
-                    background-color: $bg-color-terciario;
-                    top: 110px;
-                    left: -100%;
-                    text-align: center;
-                    transition: all 0.5s;
-                    display: flex;
-                    flex-direction: column;
-                    z-index: 10;
-                    li{
-                        display: block;                
-                        a{
-                            font-size: 20px;
-                            left: 10px;
-                        }
-                        a:hover{
-                            background: none;
-                            color:#511158;
-                        }
-                    }
-                    .cont-sub-cate{
-                        width: 100%;
-                        height: 30vh;
-                        margin: 0 -15px;
-                        background-color: $bg-color-terciario;
-                    }
-                    .cont-sub-cate:hover{
-                        color: #4c1853c4;
-                    }
-                }
-            }
-    }
     .cont-main{
         .cont-img{
             display: flex;
