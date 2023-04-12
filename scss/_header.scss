@@ -54,6 +54,7 @@ a{
         font-size: 1.5em;
         justify-content: space-evenly;
         margin: 10px 0;
+        padding: 0;
         li{
             &:hover{
                 background-color: rgba(0, 0, 0, 0.63);
@@ -61,7 +62,6 @@ a{
             a{
                 color: white;              
             }
-
         }
     }
 }

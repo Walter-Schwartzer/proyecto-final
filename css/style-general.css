@@ -37,7 +37,8 @@ a {
   display: flex;
   font-size: 1.5em;
   justify-content: space-evenly;
-  margin: 10px 0; }
+  margin: 10px 0;
+  padding: 0; }
   .cont-cate .cont-ul li:hover {
     background-color: rgba(0, 0, 0, 0.63); }
   .cont-cate .cont-ul li a {
@@ -86,6 +87,123 @@ footer {
     .footer-inicio-registro .cont-copy-registro p {
       color: #7a7a7a; }
 
+.cont-inicio-sesion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 97vh;
+  color: #fff;
+  background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%); }
+  .cont-inicio-sesion .login-form .cont-terminos {
+    display: flex; }
+    .cont-inicio-sesion .login-form .cont-terminos input {
+      margin: 0;
+      width: 4%;
+      margin-top: -10px;
+      margin-left: 50px;
+      margin-right: 5px;
+      cursor: pointer; }
+    .cont-inicio-sesion .login-form .cont-terminos p {
+      margin-right: 35px;
+      font-size: 15px; }
+  .cont-inicio-sesion .login-form .cont-check {
+    display: flex;
+    justify-content: space-around; }
+    .cont-inicio-sesion .login-form .cont-check input {
+      margin: 0;
+      width: 4%;
+      margin-top: -10px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .cont-inicio-sesion .login-form .cont-check p {
+      margin-right: 20px; }
+  .cont-inicio-sesion .form-body {
+    width: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    margin: 15px 0;
+    background-color: #ffffff21;
+    border: 1px solid #fff; }
+    .cont-inicio-sesion .form-body .cont_back {
+      text-align: center;
+      margin-bottom: 8px; }
+    .cont-inicio-sesion .form-body .bienvenida {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-top: 15px; }
+    .cont-inicio-sesion .form-body h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .cont-inicio-sesion .form-body .text-form {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 15px; }
+    .cont-inicio-sesion .form-body .login-form button a {
+      color: #fff; }
+    .cont-inicio-sesion .form-body .login-form .opciones {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 1.5rem; }
+    .cont-inicio-sesion .form-body .login-form a:hover {
+      opacity: 0.8; }
+    .cont-inicio-sesion .form-body .cont-opciones {
+      text-align: center;
+      width: 100%; }
+  .cont-inicio-sesion input {
+    display: block;
+    margin: auto;
+    height: 40px;
+    margin-bottom: 25px;
+    width: 75%;
+    padding-left: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none; }
+  .cont-inicio-sesion ::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.596); }
+  .cont-inicio-sesion input:hover {
+    transition: 0.5s;
+    border: 1px solid #2980b9;
+    color: #2498db; }
+  .cont-inicio-sesion button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background: transparent;
+    color: #b9c4c6;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 1px solid #2988b9; }
+  .cont-inicio-sesion .form-body input[type="password"] {
+    margin-top: 20px; }
+  .cont-inicio-sesion .form-body button:hover {
+    color: #d5dbdd;
+    border: 2px solid #3498db;
+    background: linear-gradient(#34495e, #2c3e50); }
+  .cont-inicio-sesion .cont-back {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px; }
+    .cont-inicio-sesion .cont-back a:hover {
+      opacity: 0.8; }
+
 .cont-main .cont-product-inicio img {
   width: 300px;
   height: 300px; }
@@ -94,7 +212,7 @@ footer {
   border: none;
   text-align: center; }
 .cont-main .cont-inicio {
-  background: url(../img/fondo-inicio-1.jpg);
+  background: url(../img/fondo-inicio-11.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -575,123 +693,6 @@ footer {
   resize: none;
   width: 20%; }
 
-.cont-inicio-sesion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  height: 97vh;
-  color: #fff;
-  background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%); }
-  .cont-inicio-sesion .login-form .cont-terminos {
-    display: flex; }
-    .cont-inicio-sesion .login-form .cont-terminos input {
-      margin: 0;
-      width: 4%;
-      margin-top: -10px;
-      margin-left: 50px;
-      margin-right: 5px;
-      cursor: pointer; }
-    .cont-inicio-sesion .login-form .cont-terminos p {
-      margin-right: 35px;
-      font-size: 15px; }
-  .cont-inicio-sesion .login-form .cont-check {
-    display: flex;
-    justify-content: space-around; }
-    .cont-inicio-sesion .login-form .cont-check input {
-      margin: 0;
-      width: 4%;
-      margin-top: -10px;
-      margin-left: 20px;
-      cursor: pointer; }
-    .cont-inicio-sesion .login-form .cont-check p {
-      margin-right: 20px; }
-  .cont-inicio-sesion .form-body {
-    width: 400px;
-    min-width: 300px;
-    border-radius: 5px;
-    margin: 15px 0;
-    background-color: #ffffff21;
-    border: 1px solid #fff; }
-    .cont-inicio-sesion .form-body .cont_back {
-      text-align: center;
-      margin-bottom: 8px; }
-    .cont-inicio-sesion .form-body .bienvenida {
-      font-size: 1.6rem;
-      text-align: center;
-      margin-top: 15px; }
-    .cont-inicio-sesion .form-body h1 {
-      text-align: center;
-      margin-bottom: 10px;
-      margin-top: 10px; }
-    .cont-inicio-sesion .form-body .text-form {
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #fff;
-      margin-top: 15px; }
-    .cont-inicio-sesion .form-body .login-form button a {
-      color: #fff; }
-    .cont-inicio-sesion .form-body .login-form .opciones {
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      font-size: 1.5rem; }
-    .cont-inicio-sesion .form-body .login-form a:hover {
-      opacity: 0.8; }
-    .cont-inicio-sesion .form-body .cont-opciones {
-      text-align: center;
-      width: 100%; }
-  .cont-inicio-sesion input {
-    display: block;
-    margin: auto;
-    height: 40px;
-    margin-bottom: 25px;
-    width: 75%;
-    padding-left: 10px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 2px;
-    background-color: transparent;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 1rem;
-    outline: none; }
-  .cont-inicio-sesion ::placeholder {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.596); }
-  .cont-inicio-sesion input:hover {
-    transition: 0.5s;
-    border: 1px solid #2980b9;
-    color: #2498db; }
-  .cont-inicio-sesion button {
-    display: block;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    height: 40px;
-    width: 78%;
-    background: transparent;
-    color: #b9c4c6;
-    border-radius: 2px;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border: 1px solid #2988b9; }
-  .cont-inicio-sesion .form-body input[type="password"] {
-    margin-top: 20px; }
-  .cont-inicio-sesion .form-body button:hover {
-    color: #d5dbdd;
-    border: 2px solid #3498db;
-    background: linear-gradient(#34495e, #2c3e50); }
-  .cont-inicio-sesion .cont-back {
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 15px; }
-    .cont-inicio-sesion .cont-back a:hover {
-      opacity: 0.8; }
-
 .cont-vs-general {
   max-width: 1440px;
   margin: 0 auto; }
@@ -804,7 +805,10 @@ footer {
 @media screen and (max-width: 720px) {
   .cont-grid-boostrap img {
     width: 200px;
-    height: 200px; } }
+    height: 200px; }
+
+  .cont-cate .cont-ul {
+    font-size: 1em; } }
 @media screen and (max-width: 620px) {
   .cont-cuenta a {
     font-size: 20px; }
