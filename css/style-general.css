@@ -231,9 +231,22 @@ footer {
   z-index: 10;
   margin-top: 200px; }
 .cont-main .cont-article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "win10 i5 teclado" "auris ram mouse";
+  gap: 100px; }
+  .cont-main .cont-article .win10 {
+    grid-area: win10; }
+  .cont-main .cont-article .i5 {
+    grid-area: i5; }
+  .cont-main .cont-article .teclado {
+    grid-area: teclado; }
+  .cont-main .cont-article .auris {
+    grid-area: auris; }
+  .cont-main .cont-article .ram {
+    grid-area: ram; }
+  .cont-main .cont-article .mouse {
+    grid-area: mouse; }
   .cont-main .cont-article .card {
     position: relative;
     width: 300px;
@@ -419,9 +432,9 @@ footer {
 .cont-hospc .cont_product_general button {
   width: 100px; }
 .cont-hospc .cont_product_general img {
-  height: 250px;
+  object-fit: contain;
   width: 250px;
-  object-fit: contain; }
+  height: 250px; }
 .cont-hospc .cont_product_general button:hover {
   background-color: #2c75a5;
   cursor: pointer; }
@@ -440,12 +453,12 @@ footer {
       color: #000000; }
 
 .cont-giftcard-compra .card-body-gift {
-  height: 400px;
-  width: 18rem; }
+  width: 18em;
+  height: 400px; }
   .cont-giftcard-compra .card-body-gift img {
+    object-fit: fill;
     width: 260px;
-    height: 190px;
-    object-fit: fill; }
+    height: 190px; }
   .cont-giftcard-compra .card-body-gift h5 {
     color: #000000; }
   .cont-giftcard-compra .card-body-gift p {
@@ -455,7 +468,7 @@ footer {
 .cont-cuenta i {
   font-size: 30px; }
 .cont-cuenta a {
-  color: #fff;
+  color: #000000;
   font-size: 24px; }
   .cont-cuenta a:hover {
     color: #680c72; }
@@ -472,7 +485,7 @@ footer {
   margin: 0 auto;
   padding: 20px; }
   .cont-cuenta .cont-cuenta-general .cont-cuenta_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -482,7 +495,7 @@ footer {
     border-radius: 5px;
     grid-area: cuenta; }
   .cont-cuenta .cont-cuenta-general .cont-ayuda_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -492,7 +505,7 @@ footer {
     border-radius: 5px;
     grid-area: ayuda; }
   .cont-cuenta .cont-cuenta-general .cont-pagos_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -502,7 +515,7 @@ footer {
     border-radius: 5px;
     grid-area: pagos; }
   .cont-cuenta .cont-cuenta-general .cont-carrito_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -512,7 +525,7 @@ footer {
     border-radius: 5px;
     grid-area: carrito; }
   .cont-cuenta .cont-cuenta-general .cont-deseados_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -522,7 +535,7 @@ footer {
     border-radius: 5px;
     grid-area: deseados; }
   .cont-cuenta .cont-cuenta-general .cont-giftcard_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -532,7 +545,7 @@ footer {
     border-radius: 5px;
     grid-area: giftcard; }
   .cont-cuenta .cont-cuenta-general .cont-mensajes_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -542,7 +555,7 @@ footer {
     border-radius: 5px;
     grid-area: mensajes; }
   .cont-cuenta .cont-cuenta-general .cont-direccion_cuenta {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 18px;
@@ -726,7 +739,11 @@ footer {
     .cont-vs-general .cont-grid-boostrap img {
       width: 400px; }
     .cont-vs-general .cont-grid-boostrap p {
-      font-size: 16px; } }
+      font-size: 16px; }
+
+  .cont-main .cont-article {
+    grid-template-areas: "win10 i5" "teclado auris" "ram mouse";
+    justify-content: center; } }
 @media screen and (max-width: 1000px) {
   .cont-main .cont-img {
     display: flex;
@@ -808,7 +825,10 @@ footer {
     height: 200px; }
 
   .cont-cate .cont-ul {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .cont-main .cont-article {
+    grid-template-areas: "win10" "i5" "teclado" "auris" "ram" "mouse"; } }
 @media screen and (max-width: 620px) {
   .cont-cuenta a {
     font-size: 20px; }
@@ -885,6 +905,9 @@ footer {
     font-size: 14px; }
   .cont-sub-carrito .cont-articulo p {
     padding: 0;
-    margin-right: -30px; } }
+    margin-right: -30px; }
+
+  .cont-cate .cont-ul a {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style-general.css.map */

@@ -6,6 +6,12 @@
 @import "login";
 
 
+//MIXIN
+@mixin tamanos($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
 //estilos de index principal
 .cont-main{
     .cont-product-inicio{
@@ -42,9 +48,29 @@
         margin-top: 200px;
     }
     .cont-article{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:"win10 i5 teclado"
+                            "auris ram mouse";
+        gap: 100px;
+        .win10{
+            grid-area: win10;
+        }
+        .i5{
+            grid-area: i5;
+        }
+        .teclado{
+            grid-area: teclado;
+        }
+        .auris{
+            grid-area: auris;
+        }
+        .ram{
+            grid-area: ram;
+        }
+        .mouse{
+            grid-area: mouse;
+        }
         .card{
             position: relative;
             width: 300px;
@@ -255,9 +281,8 @@
             width: 100px;
         }
         img{
-            height: 250px;
-            width: 250px;
             object-fit: contain;
+            @include tamanos(250px, 250px)
         }
         button:hover{
             background-color: #2c75a5;
@@ -267,6 +292,7 @@
 }
 
 //giftcards
+
 .cont-giftcard{
     h2{
         margin-top: 15px;
@@ -287,12 +313,9 @@
 }
 .cont-giftcard-compra{
     .card-body-gift{
-        height: 400px;
-        width: 18rem;
         img{
-            width: 260px;
-            height: 190px;
             object-fit: fill;
+            @include tamanos(260px, 190px)
         }
         h5{
             color: $bg-color-terciario;
@@ -301,13 +324,14 @@
             color: $bg-color-terciario;
             height: 70px;
         }
+        @include tamanos(18em, 400px)
     }
 }
 
 //Cuenta
 
 @mixin estilo-cuenta{
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
     border: 1px solid $bg-color-secundario;
     font-size: 18px;
@@ -322,7 +346,7 @@
         font-size: 30px;
     }
     a{
-        color: $bg-color-secundario;
+        color: $bg-color-terciario;
         font-size: 24px;
         &:hover{
         color: #680c72;
@@ -620,6 +644,14 @@
             }            
         }
     }
+    .cont-main{
+        .cont-article{
+            grid-template-areas:"win10 i5"
+                                "teclado auris"
+                                "ram mouse";
+            justify-content: center;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px){    
@@ -760,6 +792,17 @@
             font-size: 1em;
         }
     }
+    .cont-main{
+        .cont-article{
+            grid-template-areas:"win10"
+                                "i5"
+                                "teclado"
+                                "auris"
+                                "ram"
+                                "mouse";
+        }        
+    }
+
 }
 
 @media screen and (max-width:620px){
@@ -920,6 +963,13 @@
             p{
                 padding: 0;
                 margin-right: -30px;
+            }
+        }
+    }
+    .cont-cate{
+        .cont-ul{
+            a{
+                font-size: 14px;
             }
         }
     }
